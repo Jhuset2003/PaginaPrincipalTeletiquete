@@ -1,0 +1,46 @@
+@import url("../../globalStyles/App.css");
+
+.container{
+    width: 100%;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    
+}
+.BtnContainer button{
+    width: 100%;
+    background: none;
+    border: none;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 50px;
+}
+
+.BtnContainer span:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    align-self: center;
+    font-size: 17px;
+    font-weight: var(--subTitle);
+    text-align: start;
+}
+.BtnContainer span:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    align-self: center;
+    font-size: 25px;
+}
+.BtnContainer .arrowBtnName{
+    transition: 0.3s;
+    transform: rotate(0deg);
+}
+.BtnContainer .arrowBtnNameActive{
+    transition: 0.3s;
+    transform: rotate(180deg);
+}
+.information{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+}
+

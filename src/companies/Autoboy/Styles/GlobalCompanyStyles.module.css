@@ -1,0 +1,18 @@
+:root{
+    /*Colores*/
+    --Cprimary: blue;
+    --CSecundary: white;
+    --Cterceary:green;
+    --Ctitulos:black;
+    --Csubtitulos:grey;
+    --Ctextos:rgb(54, 131, 178);
+    /*Textos*/
+    --importacionTipoTexto:"https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap";
+    --UsarTexto:'Montserrat', sans-serif;
+    --Tituos:700;
+    --Subtitulos:600;
+    --Textos:500;
+    /*Imagenes de fondo*/
+    --backPricipal:"/backPrincipal.jpg";
+    --companyLog:"/companyLog.png"
+}

@@ -1,0 +1,26 @@
+@import url("../../globalStyles/App.css");
+
+.HomeContainer{
+    height: 100%;
+    padding-top: 70px;
+    position: relative;
+}
+.SecSeacrh{
+    height: 100%;
+    width: 100vw;
+    background: var(--primary);
+}
+.ImgBack{
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0, 0, 0, 0.50)),url("../../../resources/Backs/Back1.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 69%, 0% 100%);
+    z-index: 1;
+}
+.lettersContainer{
+    z-index: 3;
+}
