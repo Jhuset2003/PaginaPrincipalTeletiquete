@@ -22,7 +22,7 @@ const App = () => {
   
   useEffect(() => {
     // set initial value
-    const mediaWatcher = window.matchMedia("(max-width: 500px)")
+    const mediaWatcher = window.matchMedia("(max-width: 900px)")
     setIsNarrowScreen(mediaWatcher.matches);
 
     //watch for updates

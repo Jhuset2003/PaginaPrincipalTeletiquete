@@ -1,0 +1,60 @@
+@import url("../../globalStyles/App.css");
+.MetodosPagoInfo{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    padding-top: 30px;
+    margin: 0px 20px 0px 20px;
+
+}
+.MetodosPagoInfo hr{
+    height: 60px;
+    width: 6px;
+    background-color: black;
+    border: none;
+}
+.MetodosPagoImg ul{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+.MetodosPagoTitle{
+    width: 200px;
+    text-align: center;
+    font-size: 9px;
+    border-right:4px solid black ;
+    padding: 10px;
+}
+.MetodoContainer{
+    width: 60px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+@media (max-width:1116px) {
+    .MetodosPagoInfo{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .MetodosPagoInfo:only-child{
+        padding-top:0px ;
+    }
+    .MetodosPagoInfo hr{
+        rotate: 90deg;
+        height: 90px;
+    }
+    .MetodosPagoTitle{
+        border: none;
+        border-bottom: 4px solid black;
+        width: 79%;
+    }
+}

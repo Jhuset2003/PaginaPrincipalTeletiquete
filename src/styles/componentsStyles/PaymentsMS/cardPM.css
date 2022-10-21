@@ -1,0 +1,36 @@
+.Visa{
+    background-image: url("../../../resources/Logs/FormasPago/Visa.jpg");
+}
+.MasterCard{
+    background-image: url("../../../resources/Logs/FormasPago/MasterCard.png");
+}
+.Nequi{
+    background-image: url("../../../resources/Logs/FormasPago/Nequi.svg");
+}
+.Daviplata{
+    background-image: url("../../../resources/Logs/FormasPago/Daviplata.svg");
+}
+.PSE{
+    background-image: url("../../../resources/Logs/FormasPago/PSE.png");
+}
+.Exito{
+    background-image: url("../../../resources/Logs/FormasPago/Exito.png");
+}
+.SuRed{
+    background-image: url("../../../resources/Logs/FormasPago/SuRed.svg");
+}
+.PagaTodo{
+    background-image: url("../../../resources/Logs/FormasPago/PagaTodo.svg");
+}
+.Carulla{
+    background-image: url("../../../resources/Logs/FormasPago/Carulla.png");
+}
+.SurtiMayorista{
+    background-image: url("../../../resources/Logs/FormasPago/SurtiMayorista.png");
+}
+.Efecty{
+    background-image: url("../../../resources/Logs/FormasPago/Efecty.png");
+}
+.AmericanExpress{
+    background-image: url("../../../resources/Logs/FormasPago/AmericanExpress.png");
+}

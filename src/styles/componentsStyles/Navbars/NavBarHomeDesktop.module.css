@@ -3,6 +3,8 @@
 .NavBox{
     position: absolute;
     z-index: 10;
+    left: 0;
+    min-width: var(--MinW);
     
 }
 
@@ -15,13 +17,14 @@
     box-shadow: 0px 0px 7px 0px #00000084;
     justify-content: center;
     align-items: center;
+    background-color: white;
 
 }
 .BtnNavDesktopContainer{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: var(--MaxW);
-    gap: 400px;
     
 }
 .imgContainer{
@@ -29,7 +32,7 @@
     justify-content: flex-start;
     align-items: center;
     align-self: center;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 80px;
 }
 .imgContainer img{
     width: 200px;
@@ -39,7 +42,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 80px 10px 0px;
     gap: 8px;
 }
 .BtnContainerDesktop div:nth-child(1){
@@ -62,6 +65,9 @@
     font-weight: var(--subTitle);
     color: var(--Lprimary);
     font-size: 14px;
+}
+.BtnContainerDesktop div:nth-child(2) div:nth-child(2) button{
+    width: 153px;
 }
 .MenuContainer{
     margin-top: 10px;

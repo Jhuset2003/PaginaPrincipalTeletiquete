@@ -1,18 +1,31 @@
 @import url("../../globalStyles/App.css");
 
+/*Section Seacrh*/
 .HomeContainer{
     height: 100%;
     padding-top: 70px;
     position: relative;
+    min-width: var(--MinW);
+    display: flex;
+    flex-direction: column;
 }
 .SecSeacrh{
     height: 100%;
     width: 100vw;
     background: var(--primary);
+    min-width: var(--MinW);
+}
+.part1{
+    height: 80%;
+    max-width: var(--MaxW);
+}
+.part2{
+    height: 20%;
+    max-width: var(--MaxW);
 }
 .ImgBack{
     width: 100%;
-    height: 65%;
+    height: 75%;
     position: absolute;
     background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0, 0, 0, 0.50)),url("../../../resources/Backs/Back1.jpg") ;
     background-size: cover;
@@ -21,6 +34,79 @@
     clip-path: polygon(0 0, 100% 0, 100% 69%, 0% 100%);
     z-index: 1;
 }
-.lettersContainer{
-    z-index: 3;
+.ContentInfo{
+    position: relative;
+    height: 70%;
+    width: 100%;
 }
+.PositionAInfo{
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+.InfoContainer{
+    width: 85%;
+    height: 100%;
+    max-width: var(--MaxW);
+    margin-top: 50px;
+}
+.lettersContainer{
+    color: var(--Lterceary);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+.lettersContainer h1{
+    max-width: 700px;
+    font-size: calc(22px + 0.5vw);
+    font-weight: var(--title);
+}
+.lettersContainer span{
+    font-size: calc(14px + 0.5vw);
+}
+
+.ImgBackSecond{
+    max-width: 400px;
+    max-height: 400px;
+    width: calc(100px + 50vw);
+    height: calc(100px + 50vw);
+    border-radius: 50%;
+    background-image: url("../../../resources/Varios/ImgHomeSecSearch.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    right: -100px;
+    top: -10px;
+    rotate: 30deg;
+}
+.FormasDePago{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+@media (max-width:760px) {
+    .ImgBackSecond{
+        max-width: 300px;
+        max-height: 300px;
+        right: -51px;
+        top: 196px;
+        rotate: 30deg;
+        width: calc(30px + 50vw);
+        height: calc(30px + 50vw);
+    }
+}
+/*End Section Seacrh*/
+
+/*Section Aliados*/

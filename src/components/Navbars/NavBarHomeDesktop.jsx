@@ -1,5 +1,5 @@
 import {React,useState} from 'react'
-import logTeletiquete from "../../resources/Logs/log_teletiqueteSinFondo.png"
+import logTeletiquete from "../../resources/Logs/Teletiquete/log_teletiqueteSinFondo.png"
 import { InfoBtn } from './InfoBtn'
 import { Link } from 'react-router-dom';
 import NavBarHomeDesktopStyles from "../../styles/componentsStyles/Navbars/NavBarHomeDesktop.module.css"

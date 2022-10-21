@@ -6,8 +6,17 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+html{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(241, 241, 241);
+}
 body{
     height: 100vh;
+    overflow-x: hidden;
+    max-width: var(--MaxW);
+    min-width: var(--MinW);
 }
 .App{
     height: 100vh;
@@ -33,4 +42,5 @@ body{
     --gradiante: linear-gradient( 90deg,var(--OtherSecundary), var(--OtherPrimary)); 
     /*Ancho Maximo*/
     --MaxW:1800px;
+    --MinW:295px;
 }

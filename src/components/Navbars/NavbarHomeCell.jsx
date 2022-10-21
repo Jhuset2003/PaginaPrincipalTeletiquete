@@ -1,7 +1,7 @@
 import {React,useState} from 'react'
 import NavHomeStyles from "../../styles/componentsStyles/Navbars/NavbarHome.module.css"
 import { ButtonsMenu } from '../ButtonsMenu/ButtonsMenu'
-import logTeletiquete from "../../resources/Logs/log_teletiqueteSinFondo.png"
+import logTeletiquete from "../../resources/Logs/Teletiquete/log_teletiqueteSinFondo.png"
 import { InfoBtn } from './InfoBtn'
 
 import { BtnCrearCuenta } from '../ButtonsFuncionales/BtnCrearCuenta';
