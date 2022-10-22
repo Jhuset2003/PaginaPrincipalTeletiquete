@@ -1,0 +1,31 @@
+@import url("../../globalStyles/App.css");
+
+.ComentContainer{
+    color: var(--Lprimary);
+    width: calc(100px + 15vw);
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+
+    border-bottom: 2px solid rgb(204, 204, 204);
+    border-right: 1px solid rgb(238, 238, 238);
+    border-left: 1px solid rgb(238, 238, 238);
+}
+.ComentContainer h3{
+    font-size: calc(10px + 0.5vw);
+    margin-bottom: 7px;
+    text-align: start;
+}
+.ComentContainer p{
+    font-size: calc(9px + 0.5vw);
+}
+.burbuja{
+    width: 30px;
+    height: 30px ;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    right: -8px;
+    top: -2px;
+}

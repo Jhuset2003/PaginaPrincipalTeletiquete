@@ -34,8 +34,13 @@
     align-self: center;
     padding: 10px 0px 10px 80px;
 }
-.imgContainer img{
+.imgContainer .imgLogTeletiquete{
     width: 200px;
+    background-image: url("../../../resources/Logs/Teletiquete/log_teletiqueteSinFondo.png");
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     
 }
 .BtnContainerDesktop{

@@ -1,5 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
+import { CardAliados } from '../components/CardsAliados/CardAliados'
+import { Comentarios } from '../components/Comentarios/Comentarios'
+import { Galleria } from '../components/Galleria/Galleria'
 import { MetodosPago } from '../components/PaymentsM/MetodosPago'
 import HomeStyles from "../styles/componentsStyles/PagesStyles/Home.module.css"
 
@@ -38,9 +41,48 @@ export const Home = () => {
           </div>
         </section>
 
-        <section>
-          
+        <section className={HomeStyles.SecAliados}>
+          <div className={HomeStyles.SecAliadosInfoContainer}>
+            <div className={HomeStyles.SecAliadosInfo}>
+              <div className={HomeStyles.SecAliadosLetters}>
+                <h2>Nos hemos aliado a las empresas de buses más conocidas de Colombia </h2>
+                <span>¿Que esperar para viajar con nosotros?</span>
+              </div>
+              <div className={HomeStyles.SecAliadosCompanies}>
+                  <CardAliados/>
+              </div>
+              <div className={HomeStyles.SecAliadosButtonContainer}>
+                <button className={HomeStyles.SecAliadosBtn}>
+                    Viajar
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
+
+        <section className={HomeStyles.SecComentarios}>
+          <div className={HomeStyles.SecComentariosContainer}>
+              <div className={HomeStyles.SecComentariosTitle}>
+                  <h2>Que opinan de Teletiquete</h2>
+              </div>
+              <div className={HomeStyles.SecComentariosInfo}>
+                  <Comentarios/>
+              </div>
+              <hr/>
+          </div>
+        </section>
+
+        <section className={HomeStyles.SecDestinosMasVistados}>
+          <div className={HomeStyles.SecDestinosMasVistadosContainer}>
+              <div className={HomeStyles.SecDestinosMasVistadosTitle}>
+                <h2>Destinos mas visitados</h2>
+              </div>
+              <div className={HomeStyles.GalleryContainer}>
+                <Galleria/>
+              </div>
+            </div>
+        </section>
+
     </div>
   )
 }

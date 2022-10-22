@@ -1,5 +1,4 @@
 import {React,useState} from 'react'
-import logTeletiquete from "../../resources/Logs/Teletiquete/log_teletiqueteSinFondo.png"
 import { InfoBtn } from './InfoBtn'
 import { Link } from 'react-router-dom';
 import NavBarHomeDesktopStyles from "../../styles/componentsStyles/Navbars/NavBarHomeDesktop.module.css"
@@ -22,7 +21,7 @@ export const NavBarHomeDesktop = () => {
     <nav  className={NavBarHomeDesktopStyles.NavDesktopConatiner}>
         <div className={NavBarHomeDesktopStyles.BtnNavDesktopContainer}>
             <div className={NavBarHomeDesktopStyles.imgContainer}>
-                <img src={logTeletiquete} alt="Logo Teletiquete" />
+                <div className={NavBarHomeDesktopStyles.imgLogTeletiquete}/>
             </div>
             <div className={NavBarHomeDesktopStyles.BtnContainerDesktop}>
                 <div>

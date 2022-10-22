@@ -1,0 +1,14 @@
+@import url("../../globalStyles/App.css");
+
+.Autoboy{
+    background-image: url("../../../resources/Logs/Empresas/Autoboy.png");
+}
+.Sugamuxi{
+    background-image: url("../../../resources/Logs/Empresas/Sugamuxi.png");
+}
+.Coflonorte{
+    background-image: url("../../../resources/Logs/Empresas/Coflonorte.png");
+}
+.Concorde{
+    background-image: url("../../../resources/Logs/Empresas/Concorde.png");
+}
