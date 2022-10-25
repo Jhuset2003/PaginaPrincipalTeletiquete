@@ -258,7 +258,7 @@
 
 .SecInfoSeguridad{
     width: 100%;
-    padding-top: 201px;
+    padding-top: 80px;
     height: auto;
     padding-bottom: 50px;
     min-width: var(--MinW);
@@ -266,7 +266,7 @@
     justify-content: center;
 }
 .SecInfoSeguridadContainer{
-    width: 85%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,6 +301,7 @@
 .IlustracionSeguridadContainer img{
     width: 100%;
     min-width: 300px;
+    max-width: 500px;
 }
 .TextSeguridad{
     width: 50%;
@@ -341,4 +342,28 @@
     .TextSeguridad h3{
         font-size: calc(20px + 0.6vw);
     }
+}
+/*End Section InfoSeguridad*/
+
+/*Section MoreInfo*/
+
+.SecMoreInfo{
+    width: 100%;
+    padding-top: 80px;
+    height: auto;
+    padding-bottom: 50px;
+    min-width: var(--MinW);
+    display: flex;
+    justify-content: center;
+}
+.SecMoreInfoContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+    position: relative;
+    align-items: center;
+    min-width: var(--MinW);
 }

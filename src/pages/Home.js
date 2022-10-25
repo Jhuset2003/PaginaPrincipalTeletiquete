@@ -7,6 +7,7 @@ import { MetodosPago } from '../components/PaymentsM/MetodosPago'
 import HomeStyles from "../styles/componentsStyles/PagesStyles/Home.module.css"
 
 import ilustracioSeguridad from "../resources/Varios/ilustracionSeguridad.png"
+import { MoreInformation } from '../components/MoreInformation/MoreInformation'
 
 export const Home = () => {
   return (
@@ -97,6 +98,12 @@ export const Home = () => {
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus nulla ut et augue eleifend habitant.</p>
                 </div>
               </div>
+          </div>
+        </section>
+
+        <section className={HomeStyles.SecMoreInfo}>
+          <div className={HomeStyles.SecMoreInfoContainer}>
+            <MoreInformation/>
           </div>
         </section>
 
