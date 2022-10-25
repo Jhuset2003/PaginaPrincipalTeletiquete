@@ -296,7 +296,7 @@
     justify-content: center;
     align-items: center;
     align-self: center;
-    width: 50%;
+    width: 40%;
 }
 .IlustracionSeguridadContainer img{
     width: 100%;
@@ -305,17 +305,17 @@
 }
 .TextSeguridad{
     width: 50%;
-    min-width: 200px;
+    min-width: 240px;
     text-align: start;
     max-width: 500px;
-    margin-top: 60px;
+    margin-top: 85px;
 }
 .TextSeguridad h3{
-    font-size: calc(28px + 0.6vw);
+    font-size: calc(20px + 0.6vw);
     color: white;
 }
 .TextSeguridad p{
-    font-size: calc(18px + 0.6vw);
+    font-size: calc(15px + 0.6vw);
     margin-left: 20px;
     margin-top: 14px;
     color: #A79BFF;

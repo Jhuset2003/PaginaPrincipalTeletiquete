@@ -1,3 +1,10 @@
+import ilustracion1 from "../../resources/Ilustraciones/pregunta1.jpg"
+import ilustracion2 from "../../resources/Ilustraciones/payment.jpg"
+import ilustracion3 from "../../resources/Ilustraciones/pregunta2.jpg"
+import ilustracion4 from "../../resources/Ilustraciones/Steps.jpg"
+import ilustracion5 from "../../resources/Ilustraciones/Viajan.jpg"
+
+
 export const InfoMore = [
     {
         titulo:"¿Por qué elegir Teletiquete?",
@@ -5,12 +12,12 @@ export const InfoMore = [
         Compara fácilmente empresas transportadoras, servicios, precios y horarios.
         Reserva y compra el tiquete que se ajuste a tus necesidades, puedes elegir el mejor precio, el viaje más corto o algún servicio específico, todo de forma fácil y segura .
         `,
-        imagen:"https://cdn.pixabay.com/photo/2022/06/11/12/35/torii-7256271_960_720.jpg"
+        imagen:ilustracion1
     },
     {
         titulo:"¿Comprar a través de Teletiquete es confiable?",
         texto:"Por supuesto, 100% seguro y confiable. En Teletiquete todos los pagos se procesan por nuestro aliado pagos inteligentes que es una reconocida plataforma de pago que cuenta con la certificación Internacional PCI DSS, el más alto nivel de certificación. Adicionalmente contamos con los más altos estándares para garantizar la seguridad de las transacciones. Contamos con el apoyo de Credibanco, Redeban, Incocredito, Cámara de Comercio Electrónico,  AHC, Certicamara.",
-        imagen:"https://cdn.pixabay.com/photo/2022/06/11/12/35/torii-7256271_960_720.jpg"
+        imagen:ilustracion2
     },
     {
         titulo:"¿Qué es Teletiquete?",
@@ -18,7 +25,7 @@ export const InfoMore = [
         Nuestra plataforma de venta de tiquetes en bus que permite a los viajeros buscar, comparar, reservar y comprar tiquetes de bus en Colombia. 
         Teletiquete ofrece la red de buses más amplia de Colombia a través de su sitio web y aplicación móvil. Ahora no tienes que ir al terminal ni puntos de venta físicos, comprar tus tiquetes nunca fue tan fácil.
         `,
-        imagen:"https://cdn.pixabay.com/photo/2022/06/11/12/35/torii-7256271_960_720.jpg"
+        imagen:ilustracion3
     },
     {
         titulo:"¿Pasos para comprar tiquetes de bus con Teletiquete?",
@@ -29,7 +36,7 @@ export const InfoMore = [
         Recibe en tu correo electrónico o whatsapp tu tiquete, preséntalo en tu móvil o imprímelo, dependiendo de las condiciones de la empresa de bus con la que viajes.
         Alístate, disfruta de tu viaje y de los servicios disponibles en el bus.
         `,
-        imagen:"https://cdn.pixabay.com/photo/2022/06/11/12/35/torii-7256271_960_720.jpg"
+        imagen:ilustracion4
     },
     {
         titulo:"Miles de personas viajan con Teletiquete",
@@ -39,6 +46,6 @@ export const InfoMore = [
         Más de 60 empresas aliadas y 3000 destinos, para que viajes por toda Colombia.
         Evita las filas y compra tus pasajes en bus de manera confiable al instante.
         `,
-        imagen:"https://cdn.pixabay.com/photo/2022/06/11/12/35/torii-7256271_960_720.jpg"
+        imagen:ilustracion5
     }
 ]
