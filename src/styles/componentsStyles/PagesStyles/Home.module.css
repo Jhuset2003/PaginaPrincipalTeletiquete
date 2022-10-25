@@ -25,7 +25,7 @@
 }
 .ImgBack{
     width: 100%;
-    height: 75%;
+    height: 70%;
     position: absolute;
     background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0, 0, 0, 0.50)),url("../../../resources/Backs/Back1.jpg") ;
     background-size: cover;
@@ -245,5 +245,100 @@
     font-size: calc(14px + 0.5vw);
     text-align: center;
     color: var(--Lprimary);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+.GalleryContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+/*End Section Destinos mas visitados*/
+
+/*Section InfoSeguridad*/
+
+.SecInfoSeguridad{
+    width: 100%;
+    padding-top: 201px;
+    height: auto;
+    padding-bottom: 50px;
+    min-width: var(--MinW);
+    display: flex;
+    justify-content: center;
+}
+.SecInfoSeguridadContainer{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+    position: relative;
+    align-items: center;
+    min-width: var(--MinW);
+}
+.BackSecInfoSeguridadContainer{
+    position: absolute;
+    width: 200vw;
+    height: 65%;
+    background-color: #00408A;
+    z-index: 0;
+    transform: rotate(175deg);
+    bottom: 0;
+}
+.InfoSeguridad{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.IlustracionSeguridadContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 50%;
+}
+.IlustracionSeguridadContainer img{
+    width: 100%;
+    min-width: 300px;
+}
+.TextSeguridad{
+    width: 50%;
+    min-width: 200px;
+    text-align: start;
+    max-width: 500px;
+    margin-top: 60px;
+}
+.TextSeguridad h3{
+    font-size: calc(28px + 0.6vw);
+    color: white;
+}
+.TextSeguridad p{
+    font-size: calc(18px + 0.6vw);
+    margin-left: 20px;
+    margin-top: 14px;
+    color: #A79BFF;
+}
+
+@media (max-width:800px) {
+    .InfoSeguridad{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .TextSeguridad{
+        min-width: none;
+        margin-top: 23px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+    }
+    .TextSeguridad p{
+        margin: none;
+    }
+    .TextSeguridad h3{
+        font-size: calc(20px + 0.6vw);
+    }
 }

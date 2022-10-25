@@ -6,6 +6,8 @@ import { Galleria } from '../components/Galleria/Galleria'
 import { MetodosPago } from '../components/PaymentsM/MetodosPago'
 import HomeStyles from "../styles/componentsStyles/PagesStyles/Home.module.css"
 
+import ilustracioSeguridad from "../resources/Varios/ilustracionSeguridad.png"
+
 export const Home = () => {
   return (
     <div className={HomeStyles.HomeContainer}>
@@ -81,6 +83,21 @@ export const Home = () => {
                 <Galleria/>
               </div>
             </div>
+        </section>
+
+        <section className={HomeStyles.SecInfoSeguridad}>
+          <div className={HomeStyles.SecInfoSeguridadContainer}>
+              <div className={HomeStyles.BackSecInfoSeguridadContainer}/>
+              <div className={HomeStyles.InfoSeguridad}>
+                <div className={HomeStyles.IlustracionSeguridadContainer}>
+                  <img src={ilustracioSeguridad} alt='' />
+                </div>
+                <div className={HomeStyles.TextSeguridad}>
+                  <h3>Nuestra seguridad</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus nulla ut et augue eleifend habitant.</p>
+                </div>
+              </div>
+          </div>
         </section>
 
     </div>

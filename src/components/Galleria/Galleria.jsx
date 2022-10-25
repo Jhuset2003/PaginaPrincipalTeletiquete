@@ -39,9 +39,12 @@ export const Galleria = () => {
           <div className={GalleriaStyles.firstImageContainer}>
             <div className={GalleriaStyles.firstImage}>
             <img src={first.imgUrl} alt={first.ciudad} />
-              <div>
-                <p>{first.ciudad}</p>
-                <button><BsArrowRight/></button>
+              <div className={GalleriaStyles.infoImg}>
+               <div className={GalleriaStyles.backBtnImg}/>
+                <div className={GalleriaStyles.infoImageContainer}>
+                  <p>{first.ciudad}</p>
+                  <button>ir <BsArrowRight/></button>
+                </div>
               </div>
             </div>
           </div>
@@ -51,9 +54,12 @@ export const Galleria = () => {
             return(
               <div className={GalleriaStyles.OtherImages} key={index}>
                 <img src={data.imgUrl} alt={data.ciudad} />
-                <div>
-                  <p>{data.ciudad}</p>
-                  <button><BsArrowRight/></button>
+                <div className={GalleriaStyles.infoImg}>
+                  <div className={GalleriaStyles.backBtnImg}/>
+                  <div className={GalleriaStyles.infoImageContainer}>
+                    <p>{data.ciudad}</p>
+                    <button>ir <BsArrowRight/></button>
+                  </div>
                 </div>
               </div>
             )
