@@ -1,0 +1,63 @@
+@import url("../../globalStyles/App.css");
+
+.InfoFooterContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.InfoFooterPartTop{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.InfoFooterPartTop ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.InfoFooterPartTop div:nth-child(1) ul{
+    text-align: left;
+}
+.InfoFooterPartTop div{
+    margin: 0px 10px 0px 10px;
+}
+.InfoFooterPartTop ul li:nth-child(1) img{
+    text-align: center;
+    width: 120px;
+}
+.InfoFooterPartTop ul li:nth-child(2) img{
+    width: 75px;
+    border-radius: 50%;
+}
+.InfoFooterPartTop div h3{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.InfoFooterContainer hr{
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+
+}
+.InfoFooterPartBot svg{
+   font-size: calc(10px + 5vw);
+}
+.InfoFooterPartBot p{
+    font-size: calc(10px + 0.5vw);
+}
+
+@media (max-width:640px) {
+    .InfoFooterPartTop{
+        justify-content: center;
+        gap: 30px;
+    }
+}

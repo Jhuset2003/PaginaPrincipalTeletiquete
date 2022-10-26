@@ -367,3 +367,29 @@
     align-items: center;
     min-width: var(--MinW);
 }
+/*End Section MoreInfo*/
+
+/*Footer*/
+.footerHomeContainer{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    min-width: var(--MinW);
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.footerHome{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+    position: relative;
+    align-items: center;
+    min-width: var(--MinW);
+}
+
+/*End Footer*/

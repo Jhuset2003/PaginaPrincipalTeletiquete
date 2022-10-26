@@ -1,5 +1,4 @@
 import React from 'react'
-import { Helmet } from 'react-helmet-async'
 import { CardAliados } from '../components/CardsAliados/CardAliados'
 import { Comentarios } from '../components/Comentarios/Comentarios'
 import { Galleria } from '../components/Galleria/Galleria'
@@ -8,13 +7,12 @@ import HomeStyles from "../styles/componentsStyles/PagesStyles/Home.module.css"
 
 import ilustracioSeguridad from "../resources/Varios/ilustracionSeguridad.png"
 import { MoreInformation } from '../components/MoreInformation/MoreInformation'
+import { Footer } from '../components/Footer/Footer'
 
 export const Home = () => {
   return (
     <div className={HomeStyles.HomeContainer}>
-      <Helmet>
-        <title>Teletiquete</title>
-      </Helmet>
+    
         <section className={HomeStyles.SecSeacrh}>
           <div className={HomeStyles.part1}>
             <div className={HomeStyles.ImgBack}/>
@@ -106,6 +104,12 @@ export const Home = () => {
             <MoreInformation/>
           </div>
         </section>
+
+        <footer className={HomeStyles.footerHomeContainer}>
+          <div className={HomeStyles.footerHome}>
+            <Footer/>
+          </div>
+        </footer>
 
     </div>
   )
