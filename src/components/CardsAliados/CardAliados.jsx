@@ -14,4 +14,4 @@ const CardAliados = () => {
         </>
     )
 }
-export default CardAliados;
+export default CardAliados

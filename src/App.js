@@ -5,7 +5,7 @@ import {
   } from "react-router-dom";
 import "./styles/globalStyles/App.css"
 import {Home} from "./pages/Home"
-import {React,useEffect,useState,useCallback} from 'react'
+import {React,useEffect,useState} from 'react'
 
 
 
@@ -35,7 +35,7 @@ const App = () => {
     return function cleanup() {
       mediaWatcher.removeEventListener('change', updateIsNarrowScreen)
     }
-  },[isNarrowScreen])
+  },[])
 
 
 

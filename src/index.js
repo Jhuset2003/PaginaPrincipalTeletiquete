@@ -1,16 +1,18 @@
-import React from 'react';
+import React,{lazy,Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+
 import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from "react-helmet-async";
 
-
+const App = lazy(()=> import("./App"))
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HelmetProvider>
     <BrowserRouter>
       <React.StrictMode>
-        <App />
+        <Suspense fallback={<h1>Is loading...</h1>}>
+          <App/>
+        </Suspense>
       </React.StrictMode>
     </BrowserRouter>
   </HelmetProvider>
