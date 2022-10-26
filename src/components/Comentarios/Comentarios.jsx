@@ -1,7 +1,7 @@
 import React from 'react'
 import { InfoComentarios } from './InfoComentarios'
 import ComentariosStyle from "../../styles/componentsStyles/Comentarios/Comentarios.module.css"
-export const Comentarios = () => {
+const Comentarios = () => {
   return (
     <>
         {InfoComentarios.map((Info,index)=>(
@@ -14,3 +14,5 @@ export const Comentarios = () => {
     </>
   )
 }
+
+export default Comentarios

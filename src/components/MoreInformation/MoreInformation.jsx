@@ -2,7 +2,7 @@ import React from 'react'
 import { InfoMore } from './InfoMore'
 import MoreInfoStyle from "../../styles/componentsStyles/MoreInformationS/MoreInformationS.module.css"
 
-export const MoreInformation = () => {
+const MoreInformation = () => {
   return (
     <>
         {InfoMore.map((info,index)=>{
@@ -21,3 +21,5 @@ export const MoreInformation = () => {
     </>
   )
 }
+
+export default MoreInformation

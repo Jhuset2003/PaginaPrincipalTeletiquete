@@ -3,7 +3,7 @@ import StylesPM from "../../styles/componentsStyles/PaymentsMS/StylesPM.module.c
 import "../../styles/componentsStyles/PaymentsMS/cardPM.css"
 import {MetodosPagoDisponibles} from "./MetodosDisponibles"
 
-export const MetodosPago = () => {
+const MetodosPago = () => {
   return (
     <div className={StylesPM.MetodosPagoInfo}>
         <div className={StylesPM.MetodosPagoTitle}>
@@ -23,3 +23,4 @@ export const MetodosPago = () => {
     </div>
   )
 }
+export default MetodosPago

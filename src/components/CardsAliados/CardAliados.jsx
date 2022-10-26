@@ -3,7 +3,7 @@ import { InfoAliados } from './InfoAliados'
 import CardAliadosStyles from '../../styles/componentsStyles/CardAliados/CardAliados.module.css'
 import "../../styles/componentsStyles/CardAliados/CardAliado.css"
 
-export const CardAliados = () => {
+const CardAliados = () => {
     return(
         <>
             {InfoAliados.map((Aliados, index)=>{
@@ -14,3 +14,4 @@ export const CardAliados = () => {
         </>
     )
 }
+export default CardAliados;

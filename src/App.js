@@ -5,14 +5,14 @@ import {
   } from "react-router-dom";
 import "./styles/globalStyles/App.css"
 import {Home} from "./pages/Home"
-import {React,useEffect,useState} from 'react'
+import {React,useEffect,useState,useCallback} from 'react'
 
 
 
 //Importaciones de los componentes o vistas de las empresas
 import {CompanyAutoboy} from "./companies/Autoboy/CompanyAutoboy"
 import { NavbarHomeCell } from "./components/Navbars/NavbarHomeCell";
-import { NavBarHomeDesktop } from "./components/Navbars/NavBarHomeDesktop";
+import { NavBarHomeDesktop } from "./components/Navbars/NavBarHome/NavBarHomeDesktop";
 
 
 const App = () => {
@@ -35,7 +35,7 @@ const App = () => {
     return function cleanup() {
       mediaWatcher.removeEventListener('change', updateIsNarrowScreen)
     }
-  },[])
+  },[isNarrowScreen])
 
 
 

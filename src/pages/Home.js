@@ -1,13 +1,15 @@
-import React from 'react'
-import { CardAliados } from '../components/CardsAliados/CardAliados'
-import { Comentarios } from '../components/Comentarios/Comentarios'
-import { Galleria } from '../components/Galleria/Galleria'
-import { MetodosPago } from '../components/PaymentsM/MetodosPago'
+import {React,lazy} from 'react'
+
 import HomeStyles from "../styles/componentsStyles/PagesStyles/Home.module.css"
 
 import ilustracioSeguridad from "../resources/Varios/ilustracionSeguridad.png"
-import { MoreInformation } from '../components/MoreInformation/MoreInformation'
-import { Footer } from '../components/Footer/Footer'
+
+const MoreInformation = lazy(()=> import('../components/MoreInformation/MoreInformation'));
+const Footer = lazy(()=> import('../components/Footer/Footer'));
+const Comentarios = lazy(()=> import('../components/Comentarios/Comentarios'));
+const Galleria = lazy(()=> import('../components/Galleria/Galleria'));
+const MetodosPago = lazy(()=> import('../components/PaymentsM/MetodosPago'));
+const CardAliados = lazy(()=> import('../components/CardsAliados/CardAliados'));
 
 export const Home = () => {
   return (

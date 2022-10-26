@@ -4,7 +4,7 @@ import logTeletiquete from "../../resources/Logs/Teletiquete/log_teletiqueteSinF
 
 import { BiCopyright } from 'react-icons/bi';
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <div className={FooterS.InfoFooterContainer}>
         <div className={FooterS.InfoFooterPartTop}>
@@ -40,3 +40,4 @@ export const Footer = () => {
     </div>
   )
 }
+export default Footer

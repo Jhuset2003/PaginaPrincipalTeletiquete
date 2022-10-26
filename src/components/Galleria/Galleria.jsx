@@ -1,42 +1,45 @@
-import {React,useEffect,useState} from 'react'
-import { InfoGalleria } from './InfoGalleria'
+import {React} from 'react'
+// import { InfoGalleria } from './InfoGalleria'
 import GalleriaStyles from "../../styles/componentsStyles/Galleria/Galleria.module.css"
-import { BsArrowRight } from 'react-icons/bs';
+// import { BsArrowRight } from 'react-icons/bs';
+import { PrincipaImg } from './GalleriImg/PrincipaImg';
+import { OtherImgGalleria } from './GalleriImg/OtherImgGalleria';
 
 
-export const Galleria = () => {
-  const [first,setFirt] = useState([]);
-  const [All,setAll] = useState([]);
+const Galleria = () => {
+  // const [first,setFirt] = useState([]);
+  // const [All,setAll] = useState([]);
 
-  function guardaTodo(Data) {
-    setAll(Data)
-  }
+  // function guardaTodo(Data) {
+  //   setAll(Data)
+  // }
 
-  useEffect (()=> {
-    function takeOne() {
-      var information = []
-        InfoGalleria.map((info,index)=> {
+  // useEffect (()=> {
+  //   function takeOne() {
+  //     var information = []
+  //       InfoGalleria.map((info,index)=> {
           
-          if (index === 0) {
-            setFirt(info)
-          }
-          else {
-            information.push(info)
-            guardaTodo(information)
-          }
+  //         if (index === 0) {
+  //           setFirt(info)
+  //         }
+  //         else {
+  //           information.push(info)
+  //           guardaTodo(information)
+  //         }
 
-        })
+  //       })
     
-    }
-    takeOne()
-   },[first])
+  //   }
+  //   takeOne()
+  //  },[first])
   
 
   return (
     <div className={GalleriaStyles.GalleriaContainer}>
       <div className={GalleriaStyles.imgsConatiner}>
         <div className={GalleriaStyles.imgs}>
-          <div className={GalleriaStyles.firstImageContainer}>
+          <PrincipaImg/>
+          {/* <div className={GalleriaStyles.firstImageContainer}>
             <div className={GalleriaStyles.firstImage}>
             <img src={first.imgUrl} alt={first.ciudad} />
               <div className={GalleriaStyles.infoImg}>
@@ -47,9 +50,9 @@ export const Galleria = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-         <div className={GalleriaStyles.OtherImagesContainer}>
+          </div> */}
+          <OtherImgGalleria/>
+         {/* <div className={GalleriaStyles.OtherImagesContainer}>
           {All.map((data,index)=>{
             return(
               <div className={GalleriaStyles.OtherImages} key={index}>
@@ -64,10 +67,12 @@ export const Galleria = () => {
               </div>
             )
           })}
-         </div>
+         </div> */}
         </div>
       </div>
      
     </div>
   )
 }
+
+export default Galleria
