@@ -1,8 +1,8 @@
-import {React,useState} from 'react'
+import {React,useState,memo} from 'react'
 import { Link } from 'react-router-dom';
 import NavBarHomeDesktopStyles from "../../../styles/componentsStyles/Navbars/NavBarHomeDesktop.module.css"
 
-export const ButtonsMenuNavDesktop = ({InfoBtn = {}}) => {
+const ButtonsMenuNavDesktop = ({InfoBtn = {}}) => {
     const [OpenMenu,setOpenMenu] = useState(false)
     const [InfoOpenMenu,setInfoOpenMenu] = useState()
 
@@ -47,3 +47,5 @@ export const ButtonsMenuNavDesktop = ({InfoBtn = {}}) => {
     </>
   )
 }
+
+export default memo(ButtonsMenuNavDesktop)

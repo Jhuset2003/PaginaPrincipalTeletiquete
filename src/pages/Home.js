@@ -1,4 +1,4 @@
-import {React,lazy} from 'react'
+import {React,lazy, memo} from 'react'
 
 import HomeStyles from "../styles/componentsStyles/PagesStyles/Home.module.css"
 
@@ -11,7 +11,7 @@ const Galleria = lazy(()=> import('../components/Galleria/Galleria'));
 const MetodosPago = lazy(()=> import('../components/PaymentsM/MetodosPago'));
 const CardAliados = lazy(()=> import('../components/CardsAliados/CardAliados'));
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className={HomeStyles.HomeContainer}>
     
@@ -116,3 +116,5 @@ export const Home = () => {
     </div>
   )
 }
+
+export default memo(Home)

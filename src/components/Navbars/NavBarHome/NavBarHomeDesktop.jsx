@@ -1,12 +1,12 @@
-import {React} from 'react'
+import React,{memo} from 'react'
 import NavBarHomeDesktopStyles from "../../../styles/componentsStyles/Navbars/NavBarHomeDesktop.module.css"
 import { InfoBtn } from '../InfoBtn'
 import { BtnCrearCuenta } from '../../ButtonsFuncionales/BtnCrearCuenta';
 import { BtnIniciarSesion } from '../../ButtonsFuncionales/BtnIniciarSesion';
 import { BtnCuentaEmpresarial } from '../../ButtonsFuncionales/BtnCuentaEmpresarial';
-import { ButtonsMenuNavDesktop } from './ButtonsMenuNavDesktop';
+import  ButtonsMenuNavDesktop  from './ButtonsMenuNavDesktop';
 
-export const NavBarHomeDesktop = () => {
+const NavBarHomeDesktop = () => {
     
   return (
     <div className={NavBarHomeDesktopStyles.NavBox}>
@@ -38,3 +38,4 @@ export const NavBarHomeDesktop = () => {
  </div>
   )
 }
+export default memo(NavBarHomeDesktop)

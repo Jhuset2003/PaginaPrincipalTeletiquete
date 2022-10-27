@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from 'react'
 import StylesPM from "../../styles/componentsStyles/PaymentsMS/StylesPM.module.css"
 import "../../styles/componentsStyles/PaymentsMS/cardPM.css"
 import {MetodosPagoDisponibles} from "./MetodosDisponibles"
@@ -23,4 +23,4 @@ const MetodosPago = () => {
     </div>
   )
 }
-export default MetodosPago
+export default memo(MetodosPago)

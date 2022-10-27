@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{memo} from 'react'
 import { InfoComentarios } from './InfoComentarios'
 import ComentariosStyle from "../../styles/componentsStyles/Comentarios/Comentarios.module.css"
 const Comentarios = () => {
@@ -15,4 +15,4 @@ const Comentarios = () => {
   )
 }
 
-export default Comentarios
+export default memo(Comentarios)

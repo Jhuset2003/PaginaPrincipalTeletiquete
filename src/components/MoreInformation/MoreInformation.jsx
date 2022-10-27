@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{memo} from 'react'
 import { InfoMore } from './InfoMore'
 import MoreInfoStyle from "../../styles/componentsStyles/MoreInformationS/MoreInformationS.module.css"
 
@@ -22,4 +22,4 @@ const MoreInformation = () => {
   )
 }
 
-export default MoreInformation
+export default memo(MoreInformation);

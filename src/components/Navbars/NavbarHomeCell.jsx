@@ -1,4 +1,4 @@
-import {React,useState} from 'react'
+import {React,useState,memo} from 'react'
 import NavHomeStyles from "../../styles/componentsStyles/Navbars/NavbarHome.module.css"
 import { ButtonsMenu } from '../ButtonsMenu/ButtonsMenu'
 import logTeletiquete from "../../resources/Logs/Teletiquete/log_teletiqueteSinFondo.png"
@@ -12,7 +12,7 @@ import { BtnCuentaEmpresarial } from '../ButtonsFuncionales/BtnCuentaEmpresarial
 import { CgMenuGridO } from 'react-icons/cg';
 
 
-export const NavbarHomeCell = () => {
+const NavbarHomeCell = () => {
   const [menu,setMenu] = useState("")
   
 
@@ -53,3 +53,5 @@ export const NavbarHomeCell = () => {
     </nav>
   )
 }
+
+export default memo(NavbarHomeCell)

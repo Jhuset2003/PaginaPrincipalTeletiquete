@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{memo} from 'react'
 import { InfoAliados } from './InfoAliados'
 import CardAliadosStyles from '../../styles/componentsStyles/CardAliados/CardAliados.module.css'
 import "../../styles/componentsStyles/CardAliados/CardAliado.css"
@@ -14,4 +14,4 @@ const CardAliados = () => {
         </>
     )
 }
-export default CardAliados
+export default memo(CardAliados)

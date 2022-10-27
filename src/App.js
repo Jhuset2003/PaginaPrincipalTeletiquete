@@ -4,15 +4,15 @@ import {
   Route
   } from "react-router-dom";
 import "./styles/globalStyles/App.css"
-import {Home} from "./pages/Home"
-import {React,useEffect,useState} from 'react'
+import Home from "./pages/Home"
+import {React,useEffect,useState,memo} from 'react'
 
 
 
 //Importaciones de los componentes o vistas de las empresas
 import {CompanyAutoboy} from "./companies/Autoboy/CompanyAutoboy"
-import { NavbarHomeCell } from "./components/Navbars/NavbarHomeCell";
-import { NavBarHomeDesktop } from "./components/Navbars/NavBarHome/NavBarHomeDesktop";
+import  NavbarHomeCell  from "./components/Navbars/NavbarHomeCell";
+import  NavBarHomeDesktop  from "./components/Navbars/NavBarHome/NavBarHomeDesktop";
 
 
 const App = () => {
@@ -92,4 +92,4 @@ const App = () => {
 }
 
 
-export default App;
+export default memo(App);

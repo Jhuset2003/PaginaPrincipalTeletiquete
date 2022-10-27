@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{memo} from 'react'
 import FooterS from "../../styles/componentsStyles/FooterStyles/FooterS.module.css"
 import logTeletiquete from "../../resources/Logs/Teletiquete/log_teletiqueteSinFondo.png"
 
@@ -40,4 +40,4 @@ const Footer = () => {
     </div>
   )
 }
-export default Footer
+export default memo(Footer)

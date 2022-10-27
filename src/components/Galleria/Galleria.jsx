@@ -1,4 +1,4 @@
-import {React} from 'react'
+import React,{memo} from 'react'
 // import { InfoGalleria } from './InfoGalleria'
 import GalleriaStyles from "../../styles/componentsStyles/Galleria/Galleria.module.css"
 // import { BsArrowRight } from 'react-icons/bs';
@@ -75,4 +75,4 @@ const Galleria = () => {
   )
 }
 
-export default Galleria
+export default memo(Galleria)
