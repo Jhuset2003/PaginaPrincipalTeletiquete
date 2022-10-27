@@ -1,6 +1,6 @@
 import {React} from 'react'
 import NavBarHomeDesktopStyles from "../../../styles/componentsStyles/Navbars/NavBarHomeDesktop.module.css"
-
+import { InfoBtn } from '../InfoBtn'
 import { BtnCrearCuenta } from '../../ButtonsFuncionales/BtnCrearCuenta';
 import { BtnIniciarSesion } from '../../ButtonsFuncionales/BtnIniciarSesion';
 import { BtnCuentaEmpresarial } from '../../ButtonsFuncionales/BtnCuentaEmpresarial';
@@ -8,10 +8,6 @@ import { ButtonsMenuNavDesktop } from './ButtonsMenuNavDesktop';
 
 export const NavBarHomeDesktop = () => {
     
-
-  
-
-
   return (
     <div className={NavBarHomeDesktopStyles.NavBox}>
     <nav  className={NavBarHomeDesktopStyles.NavDesktopConatiner}>
@@ -31,7 +27,7 @@ export const NavBarHomeDesktop = () => {
                         <BtnIniciarSesion/>      
                     </div>
                 </div>
-                <ButtonsMenuNavDesktop/>
+                <ButtonsMenuNavDesktop InfoBtn={InfoBtn}/>
             </div>
                
         </div>

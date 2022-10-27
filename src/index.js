@@ -10,7 +10,11 @@ root.render(
   <HelmetProvider>
     <BrowserRouter>
       <React.StrictMode>
-        <Suspense fallback={<h1>Is loading...</h1>}>
+        <Suspense fallback={<div className='PantallaCarga'>
+        <section className='NameContainer'>
+          <div className='gifCarga'/>
+        </section>
+        </div>}>
           <App/>
         </Suspense>
       </React.StrictMode>

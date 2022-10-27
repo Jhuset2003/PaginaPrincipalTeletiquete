@@ -1,15 +1,18 @@
 import {React,useState} from 'react'
-import { InfoBtn } from '../InfoBtn'
 import { Link } from 'react-router-dom';
 import NavBarHomeDesktopStyles from "../../../styles/componentsStyles/Navbars/NavBarHomeDesktop.module.css"
 
-export const ButtonsMenuNavDesktop = () => {
-    const [OpenMenu,setOpenMenu] = useState()
+export const ButtonsMenuNavDesktop = ({InfoBtn = {}}) => {
+    const [OpenMenu,setOpenMenu] = useState(false)
     const [InfoOpenMenu,setInfoOpenMenu] = useState()
 
-    function OpeningAndClose() {
-        setOpenMenu(true)   
+    function Open() {
+        setOpenMenu(true) 
     }
+    function Close() {
+        setOpenMenu(false)   
+    }
+
 
   return (
     <>
@@ -19,8 +22,7 @@ export const ButtonsMenuNavDesktop = () => {
                 <div key={index}>
                         <button>
                             <span 
-                            onPointerEnter={() => {OpeningAndClose();setInfoOpenMenu(info)}}
-                            onPointerLeave={() => {setOpenMenu(false)}}
+                            onClick={() => {Open(true);setInfoOpenMenu(info)}}
                             >{info.BtnName}</span>
                         </button>
                 </div>
@@ -28,7 +30,7 @@ export const ButtonsMenuNavDesktop = () => {
         })}
     </div>
     {OpenMenu && 
-            <div className={NavBarHomeDesktopStyles.MenuContainer}>
+            <div className={NavBarHomeDesktopStyles.MenuContainer} onPointerLeave={()=>{Close()}}>
                 <div className={NavBarHomeDesktopStyles.Menu}>
                     {InfoOpenMenu.BtnLink === "" ||  !InfoOpenMenu.BtnLink ? 
                     <div>
