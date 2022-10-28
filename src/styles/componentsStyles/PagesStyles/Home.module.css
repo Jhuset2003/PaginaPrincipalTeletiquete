@@ -164,7 +164,7 @@
 .SecAliadosButtonContainer button{
     border: none;
     background: none;
-    background-color: var(--OtherPrimary);
+    background-color: var(--primary);
     color: var(--Lprimary);
     width: 100px;
     height: 40px;
@@ -172,6 +172,13 @@
     font-weight: var(--subTitle);
     border: 4px solid white;
     border-radius: 15px;
+}
+.SecAliadosBtn{
+    transition: 0.3s;
+}
+.SecAliadosBtn:hover{
+    width: 140px;
+    background-color: var(--OtherSecundary);
 }
 
 /*End Section Aliados*/
@@ -351,7 +358,7 @@
     width: 100%;
     padding-top: 80px;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     min-width: var(--MinW);
     display: flex;
     justify-content: center;
@@ -368,6 +375,38 @@
     min-width: var(--MinW);
 }
 /*End Section MoreInfo*/
+
+/*Section redes*/
+.SecRedes{
+    width: 100%;
+    padding-top: 1px;
+    height: auto;
+    padding-bottom: 50px;
+    min-width: var(--MinW);
+    display: flex;
+    justify-content: center;
+}
+.SecRedesContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+    position: relative;
+    align-items: center;
+    min-width: var(--MinW);
+}
+.SecRedesContainer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    gap: 20px;
+}
+/*End Section redes*/
 
 /*Footer*/
 .footerHomeContainer{

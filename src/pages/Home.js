@@ -1,8 +1,10 @@
 import {React,lazy, memo} from 'react'
 
 import HomeStyles from "../styles/componentsStyles/PagesStyles/Home.module.css"
-
+import { InfoMore } from '../components/MoreInformation/InfoMore'
 import ilustracioSeguridad from "../resources/Varios/ilustracionSeguridad.png"
+import { BtnFacebook } from '../components/ButtonsFuncionales/Redes/BtnFacebook';
+import { BtnInstagram } from '../components/ButtonsFuncionales/Redes/BtnInstagram';
 
 const MoreInformation = lazy(()=> import('../components/MoreInformation/MoreInformation'));
 const Footer = lazy(()=> import('../components/Footer/Footer'));
@@ -10,6 +12,8 @@ const Comentarios = lazy(()=> import('../components/Comentarios/Comentarios'));
 const Galleria = lazy(()=> import('../components/Galleria/Galleria'));
 const MetodosPago = lazy(()=> import('../components/PaymentsM/MetodosPago'));
 const CardAliados = lazy(()=> import('../components/CardsAliados/CardAliados'));
+
+
 
 const Home = () => {
   return (
@@ -103,8 +107,21 @@ const Home = () => {
 
         <section className={HomeStyles.SecMoreInfo}>
           <div className={HomeStyles.SecMoreInfoContainer}>
-            <MoreInformation/>
+            {InfoMore.map((info,index)=>{
+              return(
+                <MoreInformation info={info} key={index} index={index}/>
+              )
+            })}
           </div>
+        </section>
+
+        <section className={HomeStyles.SecRedes}>
+            <div className={HomeStyles.SecRedesContainer}>
+                <ul>
+                  <li><BtnFacebook/></li>
+                  <li><BtnInstagram/></li>
+                </ul>
+            </div>
         </section>
 
         <footer className={HomeStyles.footerHomeContainer}>

@@ -10,20 +10,41 @@
     color: var(--Lprimary);
     height: 29px;
     font-size: 14px;
+    cursor: pointer;
 }
 .BtnCrearCuenta{
     background-color: var(--primary);
     width: 100px;
     border: 2px solid var(--OtherSecundary);
+    transition: 0.5s;
 }
+.BtnCrearCuenta:hover{
+    background-color: var(--OtherSecundary);
+    width: 130px;
+}
+
+
 .BtnIniciarSesion{
     background-color:white;
     width: 115px;
     border: 2px solid var(--Lprimary);
+    transition: 0.5s;
 }
+.BtnIniciarSesion:hover{
+    background-color: black;
+    color: white;
+    width: 145px;
+}
+
+
 .BtnCuentaEmpresarial{
     background-color: var(--secundary);
     width: 170px;
     border: 2px solid var(--OtherPrimary);
+    transition: 0.5s;
 
+}
+.BtnCuentaEmpresarial:hover{
+    background-color: var(--OtherPrimary);
+    width: 200px;
 }

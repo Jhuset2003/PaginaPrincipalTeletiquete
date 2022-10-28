@@ -23,6 +23,7 @@ const ButtonsMenuNavDesktop = ({InfoBtn = {}}) => {
                         <button>
                             <span 
                             onClick={() => {Open(true);setInfoOpenMenu(info)}}
+                            className={`${NavBarHomeDesktopStyles.letterBtnDesktop} ${OpenMenu === true ? NavBarHomeDesktopStyles.letterBtnDesktopActive: ""}`}
                             >{info.BtnName}</span>
                         </button>
                 </div>
