@@ -8,7 +8,8 @@ environ.Env.read_env()
 ENVIRONMENT = env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+print(BASE_DIR)
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
@@ -45,7 +46,9 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS = [
-    
+    'apps.InfoLpage',
+    'apps.PayImages',
+    'apps.AliadosImg'
 ]
 
 THIRD_PARTY_APPS = [

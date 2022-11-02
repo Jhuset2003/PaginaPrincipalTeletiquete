@@ -9,7 +9,7 @@ __pycache__/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-media
+Media
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
@@ -131,6 +131,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+
 .env
 .venv
 env/
@@ -138,7 +139,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+.env/
+./env/
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -178,7 +180,6 @@ logs
 
 node_modules
 bower_components
-
 *.sublime*
 
 psd

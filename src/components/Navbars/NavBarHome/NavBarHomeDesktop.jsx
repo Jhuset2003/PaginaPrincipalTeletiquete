@@ -5,6 +5,7 @@ import { BtnCrearCuenta } from '../../ButtonsFuncionales/BtnCrearCuenta';
 import { BtnIniciarSesion } from '../../ButtonsFuncionales/BtnIniciarSesion';
 import { BtnCuentaEmpresarial } from '../../ButtonsFuncionales/BtnCuentaEmpresarial';
 import  ButtonsMenuNavDesktop  from './ButtonsMenuNavDesktop';
+import { Link } from 'react-router-dom';
 
 const NavBarHomeDesktop = () => {
     
@@ -13,7 +14,9 @@ const NavBarHomeDesktop = () => {
     <nav  className={NavBarHomeDesktopStyles.NavDesktopConatiner}>
         <div className={NavBarHomeDesktopStyles.BtnNavDesktopContainer}>
             <div className={NavBarHomeDesktopStyles.imgContainer}>
+                <Link to={"/Teletiquete"} style={{cursor:'pointer'}}>
                 <div className={NavBarHomeDesktopStyles.imgLogTeletiquete}/>
+                </Link>
             </div>
             <div className={NavBarHomeDesktopStyles.BtnContainerDesktop}>
                 <div>

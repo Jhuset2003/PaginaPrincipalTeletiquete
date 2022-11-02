@@ -1,0 +1,43 @@
+@import url("../../globalStyles/App.css");
+.TCPContainer{
+    height: 100vh;
+    padding-top: 70px;
+    position: relative;
+    min-width: var(--MinW);
+    display: flex;
+    justify-content: center;
+}
+
+.TCPContent{
+    height: auto;
+    width: 80%;
+    min-width: var(--MinW);
+    margin-top: 30px;
+    white-space: pre-wrap;
+}
+.TCPContent h1{
+    width: 100%;
+    text-align: center;
+    font-size: calc(20px + 0.5vw);
+    color: var(--Lsecundary);
+    font-weight: var(--title);
+}
+.containerInfo h2{
+    font-size: calc(12px + 0.5vw);
+}
+.containerInfo h3{
+    font-size: calc(10px + 0.5vw);
+    font-weight: var(--text);
+    color: var(--Lprimary);
+}
+.containerInfo h4{
+    font-size: calc(9px + 0.5vw);
+    font-weight: var(--subTitle);
+}
+.containerInfo span{
+    font-size: calc(8px + 0.5vw);
+    font-weight: var(--text);
+}
+.containerInfo:last-child span{
+    padding-bottom: 100px;
+}

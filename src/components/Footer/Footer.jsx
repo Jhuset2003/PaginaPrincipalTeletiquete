@@ -1,20 +1,31 @@
 import React,{memo} from 'react'
 import FooterS from "../../styles/componentsStyles/FooterStyles/FooterS.module.css"
 import logTeletiquete from "../../resources/Logs/Teletiquete/log_teletiqueteSinFondo.png"
+import { Link } from 'react-router-dom';
 
 import { BiCopyright } from 'react-icons/bi';
+import { PrguntasF } from './PartsFooter/TerminosCondiciones/PrguntasF';
+
 
 const Footer = () => {
+
   return (
     <div className={FooterS.InfoFooterContainer}>
         <div className={FooterS.InfoFooterPartTop}>
             <div>
-                <h3>Informacion</h3>
+                <h3>Información</h3>
                 <ul>
-                  <li>Contrato</li>
-                  <li>Tarifa Online</li>
-                  <li>Recomendaciones</li>
-                  <li>Ilustraciones Pixaby</li>
+                  <li>
+                    <Link to={"/Teletiquete/TerminosYCondiciones"}>
+                      Terminos Y Condiciones
+                    </Link>  
+                  </li>
+                  <li>
+                    <Link to={"/Teletiquete/PoliticasPrivacidad"}>
+                      Privacidad
+                    </Link>
+                  </li>
+                  <PrguntasF/>
                 </ul>
             </div>
             <div>

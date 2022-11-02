@@ -21,6 +21,16 @@
     flex-direction: column;
     gap: 10px;
 }
+.InfoFooterPartTop li{
+    cursor: pointer;
+}
+.InfoFooterPartTop li a{
+    color: white !important;
+    text-decoration: none;
+}
+.InfoFooterPartTop li a:focus{
+    color: white;
+}
 .InfoFooterPartTop div:nth-child(1) ul{
     text-align: left;
 }

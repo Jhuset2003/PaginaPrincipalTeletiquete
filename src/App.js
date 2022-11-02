@@ -13,6 +13,7 @@ import {React,useEffect,useState,memo} from 'react'
 import {CompanyAutoboy} from "./companies/Autoboy/CompanyAutoboy"
 import  NavbarHomeCell  from "./components/Navbars/NavbarHomeCell";
 import  NavBarHomeDesktop  from "./components/Navbars/NavBarHome/NavBarHomeDesktop";
+import { TerminosCondiciones } from "./pages/TerminosCondiciones";
 
 
 const App = () => {
@@ -78,6 +79,8 @@ const App = () => {
         {isNarrowScreen ? <NavbarHomeCell/> : <NavBarHomeDesktop/>}
         <Routes>
           <Route path={`/${TL}`} element={<Home/>}/>
+          <Route path={`/${TL}/TerminosYCondiciones`} element={<TerminosCondiciones/>}/>
+          <Route path={`/${TL}/PoliticasPrivacidad`} element={<TerminosCondiciones/>}/>
           
           {/*recorrido del array ,con las url y los llamado, para crear las rutas  */}
           {Companies.map((values)=>{

@@ -3,6 +3,7 @@ import NavHomeStyles from "../../styles/componentsStyles/Navbars/NavbarHome.modu
 import { ButtonsMenu } from '../ButtonsMenu/ButtonsMenu'
 import logTeletiquete from "../../resources/Logs/Teletiquete/log_teletiqueteSinFondo.png"
 import { InfoBtn } from './InfoBtn'
+import { Link } from 'react-router-dom'
 
 import { BtnCrearCuenta } from '../ButtonsFuncionales/BtnCrearCuenta';
 import { BtnIniciarSesion } from '../ButtonsFuncionales/BtnIniciarSesion';
