@@ -3,9 +3,8 @@ import NavBarHomeDesktopStyles from "../../../styles/componentsStyles/Navbars/Na
 import { InfoBtn } from '../InfoBtn'
 import { BtnCrearCuenta } from '../../ButtonsFuncionales/BtnCrearCuenta';
 import { BtnIniciarSesion } from '../../ButtonsFuncionales/BtnIniciarSesion';
-import { BtnCuentaEmpresarial } from '../../ButtonsFuncionales/BtnCuentaEmpresarial';
-import  ButtonsMenuNavDesktop  from './ButtonsMenuNavDesktop';
 import { Link } from 'react-router-dom';
+import { BtnSiguenos } from '../../ButtonsFuncionales/BtnSiguenos';
 
 const NavBarHomeDesktop = () => {
     
@@ -19,18 +18,29 @@ const NavBarHomeDesktop = () => {
                 </Link>
             </div>
             <div className={NavBarHomeDesktopStyles.BtnContainerDesktop}>
-                <div>
-                    <div>
-                        <BtnCuentaEmpresarial/>
-                    </div>
-                    <div>
+                <div className={NavBarHomeDesktopStyles.BtnContentDesktop}>
+                    <div className={NavBarHomeDesktopStyles.BtnCrearCuentaContainer}>
                         <BtnCrearCuenta/>
                     </div>
-                    <div>
+                    <div className={NavBarHomeDesktopStyles.BtnIniciarSesionContainer}>
                         <BtnIniciarSesion/>      
                     </div>
+                    <div className={NavBarHomeDesktopStyles.BtnSiguenosContainer}>
+                        <BtnSiguenos/>
+                    </div>
                 </div>
-                <ButtonsMenuNavDesktop InfoBtn={InfoBtn}/>
+                <ul>
+                    {InfoBtn.map((info,index)=>{
+                        return(
+                            <li key={index}>
+                                <Link to={`/Teletiquete/${info.BtnLink}`}>
+                                    {info.icon}
+                                    <span>{info.BtnName}</span>
+                                </Link>
+                            </li>
+                        )
+                    })}
+                </ul>
             </div>
                
         </div>

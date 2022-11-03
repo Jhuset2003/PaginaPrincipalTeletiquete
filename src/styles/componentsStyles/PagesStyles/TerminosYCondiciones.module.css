@@ -1,19 +1,26 @@
 @import url("../../globalStyles/App.css");
 .TCPContainer{
-    height: 100vh;
+    height: auto;
     padding-top: 70px;
     position: relative;
     min-width: var(--MinW);
     display: flex;
     justify-content: center;
+    
 }
 
 .TCPContent{
     height: auto;
     width: 80%;
     min-width: var(--MinW);
-    margin-top: 30px;
+    margin-top: 71px;
     white-space: pre-wrap;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.465);
+    border-left: 2px solid rgba(0, 0, 0, 0.465);
+    border-right: 2px solid rgba(0, 0, 0, 0.465);
+    border-top: 2px solid rgba(0, 0, 0, 0.465);
+    padding: 20px;
+    border-radius: 10px;
 }
 .TCPContent h1{
     width: 100%;
@@ -41,3 +48,29 @@
 .containerInfo:last-child span{
     padding-bottom: 100px;
 }
+
+
+/* Footer */
+.footerHomeContainer{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    min-width: var(--MinW);
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+}
+.footerHome{
+    width:  var(--MarginValue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+    position: relative;
+    align-items: center;
+    min-width: var(--MinW);
+}
+/* end footer */

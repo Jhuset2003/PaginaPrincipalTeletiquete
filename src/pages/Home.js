@@ -53,14 +53,14 @@ const Home = () => {
             <div className={HomeStyles.SecAliadosInfo}>
               <div className={HomeStyles.SecAliadosLetters}>
                 <h2>Nos hemos aliado a las empresas de buses más conocidas de Colombia </h2>
-                <span>¿Que esperar para viajar con nosotros?</span>
+                <span>¿Que esperas para viajar con nosotros?</span>
               </div>
               <div className={HomeStyles.SecAliadosCompanies}>
                   <CardAliados/>
               </div>
               <div className={HomeStyles.SecAliadosButtonContainer}>
                 <button className={HomeStyles.SecAliadosBtn}>
-                    Viajar
+                    Conoce a nuestros aliados
                 </button>
               </div>
             </div>
@@ -115,20 +115,12 @@ const Home = () => {
           </div>
         </section>
 
-        <section className={HomeStyles.SecRedes}>
-            <div className={HomeStyles.SecRedesContainer}>
-                <ul>
-                  <li><BtnFacebook/></li>
-                  <li><BtnInstagram/></li>
-                </ul>
-            </div>
-        </section>
-
         <footer className={HomeStyles.footerHomeContainer}>
           <div className={HomeStyles.footerHome}>
             <Footer/>
           </div>
         </footer>
+
 
     </div>
   )

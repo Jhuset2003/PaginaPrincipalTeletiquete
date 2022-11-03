@@ -13,19 +13,34 @@
     border-left: 1px solid rgb(238, 238, 238);
 }
 .ComentContainer h3{
-    font-size: calc(10px + 0.5vw);
+    font-size: calc(12px + 0.5vw);
     margin-bottom: 7px;
     text-align: start;
+    font-weight: 600;
 }
 .ComentContainer p{
     font-size: calc(9px + 0.5vw);
+    font-weight: 300;
+    margin-bottom: 15px;
 }
-.burbuja{
+.ComentContainer span{
+    font-size: calc(10px + 0.5vw);
+    font-weight: 400;
+    text-decoration: underline;
+}
+.estrellas{
     width: 30px;
     height: 30px ;
-    background-color: red;
     position: absolute;
     border-radius: 50%;
-    right: -8px;
+    right: 0;
     top: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-weight: 700;
 }
+.estrellas svg{
+    color: rgb(221, 221, 19);
+} 

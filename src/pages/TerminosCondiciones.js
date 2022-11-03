@@ -3,6 +3,7 @@ import TCP from "../styles/componentsStyles/PagesStyles/TerminosYCondiciones.mod
 import { useLocation } from "react-router-dom";
 import { infoTerminosYcondiciones } from './InfoPages/FooterInfo';
 import { infoPoliticaDePrivacidad } from './InfoPages/FooterInfo';
+import Footer from '../components/Footer/Footer';
 
 
 export const TerminosCondiciones = () => {
@@ -10,6 +11,7 @@ export const TerminosCondiciones = () => {
   let location = useLocation();
 
   return (
+    <>
     <div className={TCP.TCPContainer}>
         {
         location.pathname === "/Teletiquete/TerminosYCondiciones" ?
@@ -46,6 +48,13 @@ export const TerminosCondiciones = () => {
         :  
         ""
         }
+
     </div>
+    <footer className={TCP.footerHomeContainer}>
+          <div className={TCP.footerHome}>
+            <Footer/>
+          </div>
+      </footer>
+    </>
   )
 }

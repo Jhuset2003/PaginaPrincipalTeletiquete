@@ -1,23 +1,31 @@
+import { TbBus } from 'react-icons/tb';
+import { TiTicket } from 'react-icons/ti';
+import { MdHelpCenter,MdOutlineContactPhone,MdOutlineBusiness } from 'react-icons/md';
+
 export const InfoBtn = [
     {
-      BtnName : "Aliados",
-      BtnInfo:"Hola",
+      BtnName : `Vincula tu empresa`,
       BtnLink:"",
-      
+      icon:<TbBus/>
     },
     {
-      BtnName : "Gestionar mi tiquete",
-      BtnInfo:"Adios",
+      BtnName : `Aliados`,
       BtnLink:"",
+      icon:<MdOutlineBusiness/>
     },
     {
-      BtnName : "Ayuda",
-      BtnInfo:"Nose",
+      BtnName : `Gestionar mi tiquete`,
       BtnLink:"",
+      icon:<TiTicket/>
     },
     {
-      BtnName : "Contactenos",
-      BtnInfo:"",
+      BtnName : `Ayuda`,
+      BtnLink:"",
+      icon:<MdHelpCenter/>
+    },
+    {
+      BtnName : `Contactenos`,
       BtnLink:"Autoboy",
+      icon:<MdOutlineContactPhone/>
     },
   ]

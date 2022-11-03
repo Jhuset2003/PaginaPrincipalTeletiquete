@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom'
 
 import { BtnCrearCuenta } from '../ButtonsFuncionales/BtnCrearCuenta';
 import { BtnIniciarSesion } from '../ButtonsFuncionales/BtnIniciarSesion';
-import { BtnCuentaEmpresarial } from '../ButtonsFuncionales/BtnCuentaEmpresarial';
 
 //Iconos a usar
 import { CgMenuGridO } from 'react-icons/cg';
+import { BtnSiguenos } from '../ButtonsFuncionales/BtnSiguenos'
 
 
 const NavbarHomeCell = () => {
@@ -46,7 +46,7 @@ const NavbarHomeCell = () => {
                   <BtnIniciarSesion/>
                 </div>
                 <div>
-                  <BtnCuentaEmpresarial/>
+                  <BtnSiguenos/>
                 </div>
             </div>
           </div>

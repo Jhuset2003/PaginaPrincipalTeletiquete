@@ -12,11 +12,12 @@
     font-size: 14px;
     cursor: pointer;
 }
+
 .BtnCrearCuenta{
     background-color: var(--primary);
     width: 100px;
     border: 2px solid var(--OtherSecundary);
-    transition: 0.5s;
+    transition: all 200ms ease-out;
 }
 .BtnCrearCuenta:hover{
     background-color: var(--OtherSecundary);
@@ -25,26 +26,174 @@
 
 
 .BtnIniciarSesion{
-    background-color:white;
+    background-color: var(--secundary);
     width: 115px;
-    border: 2px solid var(--Lprimary);
-    transition: 0.5s;
+    border: 2px solid var(--OtherPrimary);
+    transition: all 200ms ease-out;
 }
 .BtnIniciarSesion:hover{
+    background-color: var(--OtherPrimary);
+    width: 140px;
+}
+
+
+
+
+.BtnHover .BtnSiguenosContainer{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: max-content;
+    border: 2px  solid black;
+    border-radius: 20px;
+    padding: 8px;
+    position: relative;
+    transition: all 300ms ease-out;
+    gap: 10px;
+    
+}
+.BtnHover:hover .BtnSiguenosContainer{
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: black;
     color: white;
-    width: 145px;
+    
+}
+.BtnHoverActivate .BtnSiguenosContainer{
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    color: white;
+    
+}
+.BtnSiguenosContainer i{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+   
+}
+.BtnSiguenosContainer span{
+    font-size: 14px;
+    display: none;
+    
+}
+.BtnHover:hover .BtnSiguenosContainer span{
+    display: block;
+    opacity: 1;
+    font-size: 14px;
+}
+.BtnHoverActivate .BtnSiguenosContainer span{
+    display: block;
+    opacity: 1;
+    font-size: 14px;
 }
 
 
-.BtnCuentaEmpresarial{
-    background-color: var(--secundary);
-    width: 170px;
-    border: 2px solid var(--OtherPrimary);
-    transition: 0.5s;
+.ModalSiguenos{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
 
 }
-.BtnCuentaEmpresarial:hover{
-    background-color: var(--OtherPrimary);
-    width: 200px;
+.BackModalSiguenos{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.618);
+    backdrop-filter: blur(10px);
+}
+.ModalSiguenosContent{
+    width: 70%;
+    height: 90%;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.LetterModalSiguenos{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    font-size: calc(20px + 0.5vw);
+    gap: 30px;
+}
+.LetterModalSiguenos p span:nth-child(3){
+    font-weight: 700;
+}
+.RedesModalSiguenos{
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-self: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    font-size: calc(20px + 0.5vw);
+    gap: 70px;
+}
+.RedesContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.imgLogTeletiquete{
+    width: 300px;
+    background-image: url("../../../resources/Logs/Teletiquete/log_teletiqueteSinFondo.png");
+    height: 80px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.CloseBtn{
+    color: rgb(255, 122, 122);
+    border: 2px solid rgb(255, 122, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    border-radius: 50%;
+    padding: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.CloseBtn:hover{
+    border-radius: 30%;
+}
+@media (max-width:900px) {
+    .ModalSiguenosContent{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .RedesContainer{
+        flex-direction: row;
+    }
+    .LetterModalSiguenos{
+        width: 100%;
+        justify-content: flex-start !important;
+        align-self: flex-start !important;
+    }
+    .CloseBtn{
+        align-self: flex-start !important;
+    }
+    
 }
