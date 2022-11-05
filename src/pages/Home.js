@@ -5,6 +5,7 @@ import { InfoMore } from '../components/MoreInformation/InfoMore'
 import ilustracioSeguridad from "../resources/Varios/ilustracionSeguridad.png"
 import { BtnFacebook } from '../components/ButtonsFuncionales/Redes/BtnFacebook';
 import { BtnInstagram } from '../components/ButtonsFuncionales/Redes/BtnInstagram';
+import { MenuButtons } from '../components/MenuButtons/MenuButtons';
 
 const MoreInformation = lazy(()=> import('../components/MoreInformation/MoreInformation'));
 const Footer = lazy(()=> import('../components/Footer/Footer'));
@@ -115,11 +116,17 @@ const Home = () => {
           </div>
         </section>
 
+        <section className={HomeStyles.Sec}>
+            
+        </section>
+
         <footer className={HomeStyles.footerHomeContainer}>
           <div className={HomeStyles.footerHome}>
             <Footer/>
           </div>
         </footer>
+
+          <MenuButtons/>
 
 
     </div>

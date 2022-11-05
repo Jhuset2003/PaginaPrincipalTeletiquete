@@ -1,1 +1,68 @@
 @import url("../../globalStyles/App.css");
+.MenuButtonsConatiner{
+    z-index: 100;
+    position: fixed;
+    bottom: -80px;
+    right: -60px;
+}
+.MenuButtons{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 50%;
+}
+
+
+
+.MenuBtnAction{
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    border: 2px solid var(--OtherSecundary);
+}
+.MenuBtnActionActivate{
+    transform: rotate(360deg);
+}
+
+.MenuContent{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    font-size: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: rgba(192, 192, 192, 0.873);
+    box-shadow: 0 0 4px rgb(0, 0, 0);
+    border-radius: 50%;
+}
+.MenuContentActivate{
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+}
+
+.ContentContainer{
+    list-style: none;
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+.Content{
+    transform: rotate(calc(360deg/3 * 3));
+}
