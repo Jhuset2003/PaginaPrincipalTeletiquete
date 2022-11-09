@@ -6,22 +6,35 @@
     padding-top: 70px;
     position: relative;
     min-width: var(--MinW);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 .SecSeacrh{
     height: auto;
     width: 100vw;
     background: var(--primary);
     min-width: var(--MinW);
-    margin-bottom: 7px;
+    margin-bottom: 7px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .part1{
     height: 70vh;
+    width: 100%;
     max-width: var(--MaxW);
 }
 .part2{
     height: auto;
     max-width: var(--MaxW);
     padding-bottom: 60px;
+    min-width: var(--MinW);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
 }
 .ImgBack{
     width: 100%;
@@ -37,7 +50,7 @@
 .ContentInfo{
     position: relative;
     height: 70%;
-    width: 100%;
+    max-width: var(--MaxW);
 }
 .PositionAInfo{
     z-index: 2;
@@ -88,7 +101,6 @@
     rotate: 30deg;
 }
 .FormasDePago{
-    width: 100%;
     height: 100%;
     overflow: hidden;
     justify-content: center;
@@ -111,19 +123,18 @@
 
 /*Section Aliados*/
 .SecAliados{
-    width: 100%;
-    padding-top: 20px;
+    width: 100vw;
     height: auto;
-    padding-bottom: 50px;
     min-width: var(--MinW);
+    background: var(--secundary);
+    margin-top: 10px;
 }
 .SecAliadosInfoContainer{
     width: 100%;
-    background: var(--secundary);
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 60px 0px 60px 0px;
+    padding: 60px 0px 30px 0px;
     position: relative;
     min-width: var(--MinW);
 }
@@ -154,7 +165,7 @@
 }
 .SecAliadosButtonContainer{
     position: absolute;
-    bottom: -15px;
+    bottom: -1000;
     width:  var(--MarginValue);
     display: flex;
     justify-content: center;
@@ -201,6 +212,7 @@
     justify-content: center;
     color: var(--Lprimary);
     min-width: var(--MinW);
+    max-width: var(--MaxW);
 }
 .SecComentariosContainer{
     width:  var(--MarginValue);
@@ -246,6 +258,7 @@
     min-width: var(--MinW);
     display: flex;
     justify-content: center;
+    max-width: var(--MaxW);
 }
 .SecDestinosMasVistadosContainer{
     width:  var(--MarginValue);
@@ -283,6 +296,7 @@
     min-width: var(--MinW);
     display: flex;
     justify-content: center;
+    max-width: var(--MaxW);
 }
 .SecInfoSeguridadContainer{
     width:   var(--MarginValue);
@@ -370,10 +384,11 @@
     width: 100%;
     padding-top: 80px;
     height: auto;
-    padding-bottom: 30px;
+    padding-bottom: 150px;
     min-width: var(--MinW);
     display: flex;
     justify-content: center;
+    max-width: var(--MaxW);
 }
 .SecMoreInfoContainer{
     width: var(--MarginValue);
@@ -381,16 +396,120 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 60px 0px 60px 0px;
+    padding: 60px 0px 60px 0px; 
     position: relative;
     align-items: center;
     min-width: var(--MinW);
 }
 /*End Section MoreInfo*/
 
+/*Section Experiencia*/
+.SecExperiencia{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    min-width: var(--MinW);
+    display: flex;
+    justify-content: center;
+    max-width: var(--MaxW);
+    position: relative;
+}
+.BackSecExperiencia{
+    position: absolute;
+    height: 200%;
+    width: 100vw;
+    background-color: rgb(43, 43, 43);
+    z-index: -1;
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+    top: -200px;
+}
+.SecExperienciaContainer{
+    width: var(--MarginValue);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 60px 0px 60px 0px;
+    position: relative;
+    min-width: var(--MinW);
+}
+
+.ExperienciaTitle{
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    position: relative;
+}
+.ImgExperiencia{
+    background-image: url(http://localhost:3000/static/media/5138237-removebg-preview.a42585b82026f54b06a9.png);
+    width: 679px;
+    height: 525px;
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 0;
+    top: -223px;
+    z-index: -1;
+}
+.ExperienciaListContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+}
+.ExperienciaListContent{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ExperienciaListContent hr{
+    height: 3px;
+    border: none;
+    background-color: white;
+}
+.ListContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ListContent div{
+    color: black;
+    background-color: var(--secundary);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 35px;
+}
+.ListContent span{
+    width: 100%;
+    color: white ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+    gap: 20px;
+    font-weight: 600;
+    
+}
+.ListContent span i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 30px;
+}
+/*End Section Experiencia*/
+
 /*Footer*/
 .footerHomeContainer{
-    width: 100%;
+    width: 100vw;
     height: auto;
     padding-bottom: 50px;
     min-width: var(--MinW);
@@ -409,6 +528,7 @@
     position: relative;
     align-items: center;
     min-width: var(--MinW);
+    max-width: var(--MaxW);
 }
 
 /*End Footer*/

@@ -3,9 +3,13 @@ import {React,lazy, memo} from 'react'
 import HomeStyles from "../styles/componentsStyles/PagesStyles/Home.module.css"
 import { InfoMore } from '../components/MoreInformation/InfoMore'
 import ilustracioSeguridad from "../resources/Varios/ilustracionSeguridad.png"
-import { BtnFacebook } from '../components/ButtonsFuncionales/Redes/BtnFacebook';
-import { BtnInstagram } from '../components/ButtonsFuncionales/Redes/BtnInstagram';
 import { MenuButtons } from '../components/MenuButtons/MenuButtons';
+
+import { TbBus } from 'react-icons/tb';
+import { MdHelpCenter,MdOutlineContactPhone,MdOutlineBusiness } from 'react-icons/md';
+import { TiTicket } from 'react-icons/ti';
+import { BsArrowRight } from 'react-icons/bs';
+
 
 const MoreInformation = lazy(()=> import('../components/MoreInformation/MoreInformation'));
 const Footer = lazy(()=> import('../components/Footer/Footer'));
@@ -116,8 +120,54 @@ const Home = () => {
           </div>
         </section>
 
-        <section className={HomeStyles.Sec}>
-            
+        <section className={HomeStyles.SecExperiencia}>
+          <div className={HomeStyles.BackSecExperiencia}/>
+            <div className={HomeStyles.SecExperienciaContainer}>
+                <div className={HomeStyles.ExperienciaTitle}>
+                    <h2>Comienza tu<br/>experiencia en<br/>Teletiquete</h2>
+                    <div className={HomeStyles.ImgExperiencia}/>
+                </div>
+                <div className={HomeStyles.ExperienciaList}>
+                    <ul className={HomeStyles.ExperienciaListContainer}>
+                      <li className={HomeStyles.ExperienciaListContent}>                        
+                        <div className={HomeStyles.ListContent}>
+                          <div><TbBus/></div>
+                          <span>Vincula Tu Empresa <i><BsArrowRight/></i> </span>
+                        </div>
+                        <hr/>
+                      </li>
+                      <li className={HomeStyles.ExperienciaListContent} >                        
+                        <div className={HomeStyles.ListContent} >
+                          <div><MdOutlineBusiness/></div>
+                          <span>Aliados <i><BsArrowRight/></i> </span>
+                        </div>
+                        <hr/>
+                      </li>
+                      <li className={HomeStyles.ExperienciaListContent} >                       
+                        <div className={HomeStyles.ListContent} >
+                          <div><TiTicket/></div>
+                          <span>Gestionar mi tiquete <i><BsArrowRight/></i> </span>
+                        </div>
+                        <hr/>
+                      </li>
+                      <li className={HomeStyles.ExperienciaListContent} >                        
+                        <div className={HomeStyles.ListContent} >
+                          <div><MdHelpCenter/></div>
+                          <span>Ayuda <i><BsArrowRight/></i> </span>
+                        </div>
+                        <hr/>
+                      </li>
+                      <li className={HomeStyles.ExperienciaListContent} >                        
+                        <div className={HomeStyles.ListContent} >
+                          <div><MdOutlineContactPhone/></div>
+                          <span>Contactenos <i><BsArrowRight/></i> </span>
+                        </div>
+                        <hr/>
+                      </li>
+                     
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <footer className={HomeStyles.footerHomeContainer}>

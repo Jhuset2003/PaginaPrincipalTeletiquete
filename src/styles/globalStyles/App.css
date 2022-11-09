@@ -17,9 +17,7 @@ html{
 }
 body{
     height: 100vh;
-    overflow-x: hidden;
-    max-width: var(--MaxW);
-    min-width: var(--MinW);
+    width: auto;
 }
 .App{
     height: 100vh;

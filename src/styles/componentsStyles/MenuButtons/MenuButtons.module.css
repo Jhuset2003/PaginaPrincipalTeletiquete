@@ -1,9 +1,9 @@
 @import url("../../globalStyles/App.css");
 .MenuButtonsConatiner{
-    z-index: 100;
+    z-index: 10;
     position: fixed;
-    bottom: -80px;
-    right: -60px;
+    bottom: -120px;
+    right: -100px;
 }
 .MenuButtons{
     position: relative;
@@ -47,7 +47,7 @@
     justify-content: center;
     align-items: center;
     align-self: center;
-    background-color: rgba(192, 192, 192, 0.873);
+    background-color: rgba(255, 255, 255, 0.945);
     box-shadow: 0 0 4px rgb(0, 0, 0);
     border-radius: 50%;
 }
@@ -63,6 +63,49 @@
     height: 50%;
     display: flex;
 }
+.ContentContainer{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center ;
+    flex-direction: column;
+    font-size: 1px;
+    font-weight: 600;
+    color: white;
+}
+.ContentContainerActivate{
+    align-self: flex-start;
+    align-items: flex-start;
+    font-size: 16px;
+    gap: 30px;
+    color: black;
+
+}
 .Content{
-    transform: rotate(calc(360deg/3 * 3));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    cursor: pointer;
+}
+.ContentContainerActivate .iconsMenuButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.Content:hover .iconsMenuButtons{
+     background-color: var(--OtherPrimary);
+    border: 1px solid var(--OtherPrimary);
+
 }
