@@ -305,7 +305,6 @@
     padding: 60px 0px 60px 0px;
     position: relative;
     align-items: center;
-    min-width: var(--MinW);
 }
 .BackSecInfoSeguridadContainer{
     position: absolute;

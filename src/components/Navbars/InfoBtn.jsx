@@ -5,12 +5,12 @@ import { MdHelpCenter,MdOutlineContactPhone,MdOutlineBusiness } from 'react-icon
 export const InfoBtn = [
     {
       BtnName : `Vincula tu empresa`,
-      BtnLink:"Aliados",
+      BtnLink:"",
       icon:<TbBus/>
     },
     {
       BtnName : `Aliados`,
-      BtnLink:"",
+      BtnLink:"Aliados",
       icon:<MdOutlineBusiness/>
     },
     {

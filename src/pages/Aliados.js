@@ -4,6 +4,9 @@ import { Helmet } from 'react-helmet-async'
 import Footer from '../components/Footer/Footer'
 import AliDemoImg from "../resources/Logs/Empresas/Autoboy.png"
 
+import { AiOutlineWhatsApp } from 'react-icons/ai';
+import { TbClipboardText } from 'react-icons/tb';
+
 
 export const Aliados = () => {
   return (
@@ -19,10 +22,10 @@ export const Aliados = () => {
                           <img src={AliDemoImg} alt="" />
                         </div>
                         <div className={AliadosS.LettersCardAliados}>
-                            <h3>Autoboy</h3>
-                            <hr/>
                             <div className={AliadosS.ButtonsAliContainer}>
-                            <button>Btn</button>
+                              <button>Comprar</button>
+                              <button> <i><AiOutlineWhatsApp/></i> <span>WhatsApp</span> </button>
+                              <button><i><TbClipboardText/></i> <span>Leer</span></button>
                             </div>
                         </div>
                     </div>
