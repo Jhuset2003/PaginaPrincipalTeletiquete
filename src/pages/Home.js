@@ -1,4 +1,5 @@
 import {React,lazy, memo} from 'react'
+import { Helmet } from 'react-helmet-async'
 
 import HomeStyles from "../styles/componentsStyles/PagesStyles/Home.module.css"
 import { InfoMore } from '../components/MoreInformation/InfoMore'
@@ -23,6 +24,9 @@ const CardAliados = lazy(()=> import('../components/CardsAliados/CardAliados'));
 const Home = () => {
   return (
     <div className={HomeStyles.HomeContainer}>
+      <Helmet>
+        <title>Teletiquete</title>
+      </Helmet>
     
         <section className={HomeStyles.SecSeacrh}>
           <div className={HomeStyles.part1}>
@@ -169,13 +173,7 @@ const Home = () => {
                 </div>
             </div>
         </section>
-
-        <footer className={HomeStyles.footerHomeContainer}>
-          <div className={HomeStyles.footerHome}>
-            <Footer/>
-          </div>
-        </footer>
-
+          <Footer/>
           <MenuButtons/>
 
 

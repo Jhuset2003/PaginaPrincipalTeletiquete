@@ -1,0 +1,64 @@
+@import url("../../globalStyles/App.css");
+
+.AliadosContainer{
+    height: 100vh;
+    padding-top: 120px;
+    position: relative;
+    min-width: var(--MinW);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.AliadosContent{
+    height: auto;
+    width: 100vw;
+    min-width: var(--MinW);
+    margin-bottom: 7px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.CardContainer{
+    width: var(--MarginValue);
+    max-width: var(--MaxW);
+    background-color: aqua;
+
+}
+.CardAliados{
+    width: 500px;
+    background-color: black;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+.LogAliados{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.LogAliados img{
+    width: 200px;
+}
+.LettersCardAliados{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    align-self: center;
+}
+.LettersCardAliados hr{
+    background-color: white;
+    width: 500px;
+    height: 10px;
+}

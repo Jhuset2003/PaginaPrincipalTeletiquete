@@ -14,6 +14,7 @@ import {CompanyAutoboy} from "./companies/Autoboy/CompanyAutoboy"
 import  NavbarHomeCell  from "./components/Navbars/NavbarHomeCell";
 import  NavBarHomeDesktop  from "./components/Navbars/NavBarHome/NavBarHomeDesktop";
 import { TerminosCondiciones } from "./pages/TerminosCondiciones";
+import { Aliados } from "./pages/Aliados";
 
 
 const App = () => {
@@ -81,6 +82,7 @@ const App = () => {
           <Route path={`/${TL}`} element={<Home/>}/>
           <Route path={`/${TL}/TerminosYCondiciones`} element={<TerminosCondiciones/>}/>
           <Route path={`/${TL}/PoliticasPrivacidad`} element={<TerminosCondiciones/>}/>
+          <Route path={`/${TL}/Aliados`} element={<Aliados/>}/>
           
           {/*recorrido del array ,con las url y los llamado, para crear las rutas  */}
           {Companies.map((values)=>{

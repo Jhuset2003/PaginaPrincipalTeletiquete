@@ -50,11 +50,7 @@ export const TerminosCondiciones = () => {
         }
 
     </div>
-    <footer className={TCP.footerHomeContainer}>
-          <div className={TCP.footerHome}>
-            <Footer/>
-          </div>
-      </footer>
+      <Footer/>
     </>
   )
 }

@@ -2,18 +2,27 @@
 
 .InfoFooterContainer{
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: center;
+    background-color: black;
+    color: white;
+    padding: 60px 0px 60px 0px;
+    
 }
 .InfoFooterPartTop{
-    width: 100%;
+    width: var(--MarginValue);
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-align: center;
+    max-width: var(--MaxW);
+}
+.InfoFooterPartTopContent{
+    width: 200px;
 }
 .InfoFooterPartTop ul{
     list-style: none;
@@ -31,8 +40,23 @@
 .InfoFooterPartTop li a:focus{
     color: white;
 }
-.InfoFooterPartTop div:nth-child(1) ul{
-    text-align: left;
+.InfoFooterPartTop div:nth-child(1) ul li{
+    text-align: center;
+}
+.InfoFooterPartTop div:nth-child(1) h3{
+    text-align: center;
+}
+.InfoFooterPartTop div:nth-child(2) ul li{
+    text-align: center;
+}
+.InfoFooterPartTop div:nth-child(2) h3{
+    text-align: center;
+}
+.InfoFooterPartTop div:nth-child(3) ul li{
+    text-align: center;
+}
+.InfoFooterPartTop div:nth-child(3) h3{
+    text-align: center;
 }
 .InfoFooterPartTop div{
     margin: 0px 10px 0px 10px;
@@ -54,9 +78,18 @@
 
 
 .InfoFooterContainer hr{
-    width: 100%;
+    width: var(--MarginValue);
     margin: 15px 0px 15px 0px;
+    max-width: var(--MaxW);
 
+
+}
+.InfoFooterPartBot{
+    width: var(--MarginValue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
 }
 .InfoFooterPartBot svg{
    font-size: calc(10px + 5vw);

@@ -10,9 +10,9 @@ import { PrguntasF } from './PartsFooter/TerminosCondiciones/PrguntasF';
 const Footer = () => {
 
   return (
-    <div className={FooterS.InfoFooterContainer}>
+    <footer className={FooterS.InfoFooterContainer}>
         <div className={FooterS.InfoFooterPartTop}>
-            <div>
+            <div className={FooterS.InfoFooterPartTopContent}>
                 <h3>Información</h3>
                 <ul>
                   <li>
@@ -28,7 +28,7 @@ const Footer = () => {
                   <PrguntasF/>
                 </ul>
             </div>
-            <div>
+            <div className={FooterS.InfoFooterPartTopContent} >
               <h3>Desarrolladores</h3>
               <ul>
                 <li><img src={logTeletiquete} alt="Teletiquete" /></li>
@@ -36,7 +36,7 @@ const Footer = () => {
               </ul>
 
             </div>
-            <div>
+            <div className={FooterS.InfoFooterPartTopContent} >
               <h3>Nuestro entorno</h3>
               <ul>
                 <li>¿Que es Teletiquete?</li>
@@ -48,7 +48,7 @@ const Footer = () => {
           <BiCopyright/>
           <p>Derechos reservados para Teletiquete </p>
         </div>
-    </div>
+    </footer>
   )
 }
 export default memo(Footer)
