@@ -21,6 +21,11 @@
 .NavInfoActive{
     border-bottom: 1px solid black;
 }
+.NavInfo a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 .NavInfo img{
    width: 146px;
    display: flex;

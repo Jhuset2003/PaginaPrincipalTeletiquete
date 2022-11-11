@@ -21,6 +21,7 @@ body{
 }
 .App{
     width: 100vw;
+    overflow-x: hidden;
     height: 100vh;
     position: relative;
 }

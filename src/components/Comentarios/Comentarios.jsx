@@ -5,7 +5,6 @@ import ComentariosStyle from "../../styles/componentsStyles/Comentarios/Comentar
 import { AiFillStar } from 'react-icons/ai';
 
 const Comentarios = () => {
-  let i
   return (
     <>
         {InfoComentarios.map((Info,index)=>(

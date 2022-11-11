@@ -24,10 +24,12 @@ const NavbarHomeCell = () => {
   return (
     <nav className={NavHomeStyles.NavBar}>
         <div className={`${NavHomeStyles.NavInfo} ${menu === true ? NavHomeStyles.NavInfoActive : ""}`}>
+            <Link to={"/Teletiquete"} >
             <img src={logTeletiquete} alt="Logo Teletiquete" />
+            </Link>
 
             <div className={NavHomeStyles.BtnMenuOpen}>
-            <CgMenuGridO onClick={() => {openMenu()}}/>
+            <CgMenuGridO onClick={() => {openMenu()}} cursor="pointer"/>
             </div>
         </div>
         

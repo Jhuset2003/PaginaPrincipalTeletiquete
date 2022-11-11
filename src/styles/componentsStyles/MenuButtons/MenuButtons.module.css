@@ -1,6 +1,6 @@
 @import url("../../globalStyles/App.css");
 .MenuButtonsConatiner{
-    z-index: 10;
+    z-index: 9;
     position: fixed;
     bottom: -120px;
     right: -100px;

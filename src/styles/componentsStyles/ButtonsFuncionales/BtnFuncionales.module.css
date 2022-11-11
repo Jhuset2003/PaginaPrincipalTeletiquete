@@ -118,6 +118,7 @@
     z-index: 10;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
 }
 .LetterModalSiguenos{
     color: white;

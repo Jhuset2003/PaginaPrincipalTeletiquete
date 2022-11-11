@@ -510,6 +510,9 @@
         flex-direction: column-reverse;
         margin-bottom: 50px;
     }
+    .ExperienciaTitle{
+        font-size: 20px;
+    }
     .ListContent{
         flex-direction: row;
         height: auto;
@@ -525,7 +528,21 @@
     .ListContent span{
         align-self: center;
     }
- 
+    .ImgExperiencia{
+        width: 310px;
+        height: 310px;
+    }
+    .ListContent span{
+        font-size: 14px;
+    }
+    .ListContent span i{
+        font-size: 20px;
+    }
+    .ListContent div{
+        font-size: 30px;
+        width: 58px;
+        height: 43px;
+    }
 }
 
 

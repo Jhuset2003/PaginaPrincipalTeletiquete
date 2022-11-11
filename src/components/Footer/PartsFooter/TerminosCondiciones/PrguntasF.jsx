@@ -2,7 +2,6 @@ import {React,useState} from 'react'
 import { InfoFooter } from '../../InfosFooter/InfoFooter'
 import PartsFooter from "../../../../styles/componentsStyles/FooterStyles/FooterParts.module.css"
 import { AcordionPF } from './AcordionPF'
-import { CgClose } from 'react-icons/cg';
 
 export const PrguntasF = () => {
     const [OpenBtn,setOpenBtn] = useState()
