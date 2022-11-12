@@ -92,7 +92,7 @@
     align-items: center ;
 }
 .InfoFooterPartBot svg{
-   font-size: calc(10px + 5vw);
+   font-size: calc(90px + 0.5vw);
 }
 .InfoFooterPartBot p{
     font-size: calc(10px + 0.5vw);

@@ -10,7 +10,7 @@
 
 .TCPContent{
     height: auto;
-    width: 80%;
+    width: 95%;
     min-width: var(--MinW);
     margin-top: 71px;
     white-space: pre-wrap;

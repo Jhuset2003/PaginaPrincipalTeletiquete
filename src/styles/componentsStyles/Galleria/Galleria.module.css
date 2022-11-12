@@ -60,7 +60,7 @@
 
 .infoImg{
     display: flex;
-    width: 60%;
+    width: 80%;
     height: 11%; 
     position: relative;
     margin-left: 1px;
@@ -80,23 +80,25 @@
     grid-template-columns: 2fr 1fr;
 }
 .infoImageContainer p{
-    width: 100%;
+    height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: var(--subTitle);
     color: var(--Lprimary);
-    font-size: calc(9px + 0.4vw);
+    font-size: calc(7px + 0.3vw);
     border-right: 1px solid var(--Lprimary);
 }
 .infoImageContainer button{
-    width: 100%;
+    height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: var(--subTitle);
     color: var(--Lprimary);
-    font-size: calc(8px + 0.4vw);
+    font-size: calc(7px + 0.3vw);
     border: none;
     background:none;
     gap: 10px;

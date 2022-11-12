@@ -23,7 +23,7 @@
 .part1{
     height: 70vh;
     width: 100%;
-    max-width: var(--MaxW);
+    position: relative;
 }
 .part2{
     height: auto;
@@ -45,11 +45,12 @@
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 190% 69%, 0% 100%);
     z-index: 1;
+    top: 0;
 }
 .ContentInfo{
     position: relative;
     height: 70%;
-    max-width: var(--MaxW);
+    width: 100%;
 }
 .PositionAInfo{
     z-index: 2;
@@ -341,11 +342,11 @@
     margin-top: 85px;
 }
 .TextSeguridad h3{
-    font-size: calc(20px + 0.6vw);
+    font-size: calc(18px + 0.3vw);
     color: white;
 }
 .TextSeguridad p{
-    font-size: calc(15px + 0.6vw);
+    font-size: calc(14px + 0.3vw);
     margin-left: 20px;
     margin-top: 14px;
     color: #A79BFF;
@@ -482,6 +483,10 @@
     align-items: center;
     border-radius: 50%;
     font-size: 35px;
+    transition: all 0.5s;
+}
+.ListContent:hover div{
+    background-color: var(--OtherSecundary);
 }
 .ListContent span{
     width: 100%;
@@ -500,6 +505,11 @@
     align-items: center;
     align-self: center;
     font-size: 30px;
+    transition: all 0.5s;
+
+}
+.ListContent:hover span i{
+    color: var(--OtherSecundary);
 }
 @media (max-width:1100px) {
     .SecExperiencia{
@@ -538,6 +548,7 @@
     .ListContent span i{
         font-size: 20px;
     }
+   
     .ListContent div{
         font-size: 30px;
         width: 58px;

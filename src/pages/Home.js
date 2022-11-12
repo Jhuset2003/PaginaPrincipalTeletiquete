@@ -6,10 +6,9 @@ import { InfoMore } from '../components/MoreInformation/InfoMore'
 import ilustracioSeguridad from "../resources/Varios/ilustracionSeguridad.png"
 import { MenuButtons } from '../components/MenuButtons/MenuButtons';
 
-import { TbBus } from 'react-icons/tb';
-import { MdHelpCenter,MdOutlineContactPhone,MdOutlineBusiness } from 'react-icons/md';
-import { TiTicket } from 'react-icons/ti';
+import { InfoBtn } from '../components/Navbars/InfoBtn'
 import { BsArrowRight } from 'react-icons/bs';
+import { Link } from 'react-router-dom'
 
 
 const MoreInformation = lazy(()=> import('../components/MoreInformation/MoreInformation'));
@@ -29,8 +28,9 @@ const Home = () => {
       </Helmet>
     
         <section className={HomeStyles.SecSeacrh}>
+        <div className={HomeStyles.ImgBack}/>
+
           <div className={HomeStyles.part1}>
-            <div className={HomeStyles.ImgBack}/>
             <div className={HomeStyles.ImgBackSecond}/>
             <div className={HomeStyles.ContentInfo}>
               <div className={HomeStyles.PositionAInfo}>
@@ -133,42 +133,19 @@ const Home = () => {
                 </div>
                 <div className={HomeStyles.ExperienciaList}>
                     <ul className={HomeStyles.ExperienciaListContainer}>
-                      <li className={HomeStyles.ExperienciaListContent}>                        
-                        <div className={HomeStyles.ListContent}>
-                          <div><TbBus/></div>
-                          <span>Vincula Tu Empresa <i><BsArrowRight/></i> </span>
-                        </div>
-                        <hr/>
-                      </li>
-                      <li className={HomeStyles.ExperienciaListContent} >                        
-                        <div className={HomeStyles.ListContent} >
-                          <div><MdOutlineBusiness/></div>
-                          <span>Aliados <i><BsArrowRight/></i> </span>
-                        </div>
-                        <hr/>
-                      </li>
-                      <li className={HomeStyles.ExperienciaListContent} >                       
-                        <div className={HomeStyles.ListContent} >
-                          <div><TiTicket/></div>
-                          <span>Gestionar mi tiquete <i><BsArrowRight/></i> </span>
-                        </div>
-                        <hr/>
-                      </li>
-                      <li className={HomeStyles.ExperienciaListContent} >                        
-                        <div className={HomeStyles.ListContent} >
-                          <div><MdHelpCenter/></div>
-                          <span>Ayuda <i><BsArrowRight/></i> </span>
-                        </div>
-                        <hr/>
-                      </li>
-                      <li className={HomeStyles.ExperienciaListContent} >                        
-                        <div className={HomeStyles.ListContent} >
-                          <div><MdOutlineContactPhone/></div>
-                          <span>Contactenos <i><BsArrowRight/></i> </span>
-                        </div>
-                        <hr/>
-                      </li>
-                     
+                      {InfoBtn.map((info,index)=>{
+                        return(
+                          <li className={HomeStyles.ExperienciaListContent} key={index}>                        
+                            <Link to={info.BtnLink}>
+                            <div className={HomeStyles.ListContent}>
+                              <div>{info.icon}</div>
+                              <span>{info.BtnName} <i><BsArrowRight/></i> </span>
+                            </div>
+                            </Link>
+                            <hr/>
+                        </li>
+                        )
+                      })}
                     </ul>
                 </div>
             </div>

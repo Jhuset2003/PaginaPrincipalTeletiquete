@@ -196,6 +196,9 @@
 }
 
 @media (max-width:1200px) {
+    .CardContainer{
+        width: 90%;
+    }
     .CardAliados{
         display: flex;
         justify-content: center;
