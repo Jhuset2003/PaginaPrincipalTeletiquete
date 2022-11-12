@@ -40,7 +40,7 @@ export const Aliados = () => {
                         <div className={AliadosS.CardAliados}>
                           <div 
                           className={AliadosS.LogAliados} 
-                           style={{background:`linear-gradient(rgba(0, 0, 0, 0.308),rgba(0,0,0,0.308)),url(${InfoCardAliados.urlImgBack}) center no-repeat`,backgroundSize:"cover"}}
+                           style={{background:`linear-gradient(rgba(0, 0, 0, 0.308),rgba(0,0,0,0.308)),url(${InfoCardAliados.urlImgBack}) center / cover no-repeat`}}
                           >
                             <img src={InfoCardAliados.ImgAli} alt={InfoCardAliados.nombreAli}/>
                           </div>

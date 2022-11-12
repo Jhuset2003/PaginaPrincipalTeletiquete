@@ -17,7 +17,7 @@ export const MenuButtons = () => {
 {/* */}
 				<div className={`${MenuButtonsS.MenuContent} ${Activate ? MenuButtonsS.MenuContentActivate : ""}`}>
 						<ul className={`${MenuButtonsS.ContentContainer} ${Activate ? MenuButtonsS.ContentContainerActivate : ""}`}>
-							<li className={`${MenuButtonsS.Content}  ${Activate ? MenuButtonsS.ContentActivate1 : ""}`}>
+							<li className={`${MenuButtonsS.Content}  ${Activate ? MenuButtonsS.ContentActivate1 : ""}`} >
 								<PrguntasF/><i className={MenuButtonsS.iconsMenuButtons}><BiQuestionMark/></i>
 							</li>
 							<li className={`${MenuButtonsS.Content} ${Activate ? MenuButtonsS.ContentActivate2 : ""}`}>
