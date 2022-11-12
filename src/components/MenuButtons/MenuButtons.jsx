@@ -1,4 +1,5 @@
 import {React,useState} from 'react'
+import { motion,useDragControls } from 'framer-motion';
 
 import { BiMessageAltX,BiMessageAltError,BiQuestionMark } from 'react-icons/bi';
 
@@ -6,10 +7,16 @@ import MenuButtonsS from "../../styles/componentsStyles/MenuButtons/MenuButtons.
 import { PrguntasF } from '../Footer/PartsFooter/TerminosCondiciones/PrguntasF';
 
 export const MenuButtons = () => {
-	const [Activate,setActivate] = useState()
-
+	const [Activate,setActivate] = useState(false)
+	const controls = useDragControls()
 	return (
-		<div className={MenuButtonsS.MenuButtonsConatiner}>
+		<motion.div className={MenuButtonsS.MenuButtonsConatiner}
+		drag
+		dragListener={true}
+		dragControls={controls}
+		dragElastic={0}
+		dragMomentum={false}
+		>
 			<div className={MenuButtonsS.MenuButtons} >
 {/*  */}
 				<i className={`${MenuButtonsS.MenuBtnAction} ${Activate ? MenuButtonsS.MenuBtnActionActivate : ""}`} onClick={() => {setActivate(!Activate)}}>
@@ -31,6 +38,6 @@ export const MenuButtons = () => {
 				</div>
 {/*  */}
 			</div>
-        </div>
+        </motion.div>
 	);
 }
