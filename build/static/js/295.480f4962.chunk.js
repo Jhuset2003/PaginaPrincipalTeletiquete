@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpagina_principal_teletiquete=self.webpackChunkpagina_principal_teletiquete||[]).push([[295],{1295:function(e,a,n){n.r(a),n.d(a,{default:function(){return c}});var r=n(2791),t=[{empresa:"Autoboy"},{empresa:"Sugamuxi"},{empresa:"Coflonorte"},{empresa:"Concorde"}],i="CardAliados_CardAliadosContainer__L-SrO",o=n(184),u=function(){return(0,o.jsx)(o.Fragment,{children:t.map((function(e,a){return(0,o.jsx)("div",{className:"".concat(i," ").concat(e.empresa)},a)}))})},c=(0,r.memo)(u)}}]);
+//# sourceMappingURL=295.480f4962.chunk.js.map

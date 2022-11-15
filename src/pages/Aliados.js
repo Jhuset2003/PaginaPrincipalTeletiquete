@@ -23,9 +23,7 @@ export const Aliados = () => {
     }
     First()
   },[])
-  const scrollToTop = () =>{                      
-   console.log(window.scrollY)
-  }
+
   return (
     <>
         <Helmet>
