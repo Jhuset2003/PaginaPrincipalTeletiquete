@@ -2,7 +2,7 @@
 
 .NavBox{
     position: absolute;
-    z-index: 10;
+    z-index: 9;
     left: 0;
     min-width: var(--MinW);
     width: 100%;
